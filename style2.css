@@ -1,0 +1,1084 @@
+.list-of-products {
+    background-color: #fffaea;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .list-of-products .div {
+    background-color: var(--variable-collection-color-3);
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .list-of-products .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 1001px;
+    top: 23px;
+    left: 0;
+  }
+  
+  .list-of-products .overlap-group {
+    position: absolute;
+    width: 769px;
+    height: 464px;
+    top: 537px;
+    left: 671px;
+  }
+  
+  .list-of-products .rectangle {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 111px;
+    left: 440px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .rectangle-2 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 116px;
+    left: 88px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .omyztkb {
+    width: 152px;
+    height: 152px;
+    top: 145px;
+    left: 475px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .element {
+    width: 214px;
+    height: 214px;
+    top: 110px;
+    left: 92px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .untitled-design {
+    width: 256px;
+    height: 229px;
+    top: 0;
+    left: 513px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .text-wrapper {
+    position: absolute;
+    width: 89px;
+    top: 269px;
+    left: 0;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-2 {
+    width: 112px;
+    top: 274px;
+    left: 347px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-3 {
+    position: absolute;
+    width: 129px;
+    top: 263px;
+    left: 364px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .rectangle-3 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 111px;
+    left: 440px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .rectangle-4 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 116px;
+    left: 88px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .element-rdmajfjf {
+    width: 250px;
+    height: 250px;
+    top: 89px;
+    left: 73px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .img {
+    width: 189px;
+    height: 189px;
+    top: 122px;
+    left: 449px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .text-wrapper-4 {
+    width: 137px;
+    top: 269px;
+    left: 12px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .untitled-design-2 {
+    width: 458px;
+    height: 200px;
+    top: 264px;
+    left: 163px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .overlap-2 {
+    position: absolute;
+    width: 665px;
+    height: 652px;
+    top: 349px;
+    left: 0;
+  }
+  
+  .list-of-products .rectangle-5 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 314px;
+    left: 401px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .cqohht {
+    position: absolute;
+    width: 147px;
+    height: 147px;
+    top: 360px;
+    left: 438px;
+    object-fit: cover;
+  }
+  
+  .list-of-products .line {
+    position: absolute;
+    width: 1px;
+    height: 652px;
+    top: 0;
+    left: 290px;
+    object-fit: cover;
+  }
+  
+  .list-of-products .text-wrapper-5 {
+    width: 89px;
+    top: 466px;
+    left: 310px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-6 {
+    position: absolute;
+    width: 187px;
+    top: 484px;
+    left: 315px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .rectangle-6 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 314px;
+    left: 401px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .text-wrapper-7 {
+    top: 451px;
+    left: 88px;
+    position: absolute;
+    width: 265px;
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-8 {
+    position: absolute;
+    width: 265px;
+    top: 337px;
+    left: 86px;
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-9 {
+    position: absolute;
+    width: 265px;
+    top: 207px;
+    left: 86px;
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-10 {
+    position: absolute;
+    width: 265px;
+    top: 239px;
+    left: 86px;
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-11 {
+    top: 367px;
+    left: 86px;
+    position: absolute;
+    width: 265px;
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-12 {
+    position: absolute;
+    width: 265px;
+    top: 483px;
+    left: 87px;
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-13 {
+    position: absolute;
+    width: 123px;
+    top: 169px;
+    left: 60px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-14 {
+    position: absolute;
+    width: 265px;
+    top: 296px;
+    left: 60px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-15 {
+    position: absolute;
+    width: 265px;
+    top: 416px;
+    left: 60px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-16 {
+    position: absolute;
+    width: 265px;
+    top: 296px;
+    left: 60px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .check-box-outline {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 208px;
+    left: 60px;
+  }
+  
+  .list-of-products .check-box-outline-2 {
+    top: 336px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 60px;
+  }
+  
+  .list-of-products .check-box-outline-3 {
+    top: 452px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 60px;
+  }
+  
+  .list-of-products .check-box-outline-4 {
+    top: 484px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 60px;
+  }
+  
+  .list-of-products .arrow-drop-down {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 170px;
+    left: 100px;
+  }
+  
+  .list-of-products .arrow-drop-down-2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 297px;
+    left: 191px;
+  }
+  
+  .list-of-products .arrow-drop-down-3 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 417px;
+    left: 169px;
+  }
+  
+  .list-of-products .untitled-design-3 {
+    width: 609px;
+    height: 228px;
+    top: 424px;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .wmmmewl {
+    position: absolute;
+    width: 221px;
+    height: 221px;
+    top: 317px;
+    left: 401px;
+    object-fit: cover;
+  }
+  
+  .list-of-products .untitled-design-4 {
+    width: 287px;
+    height: 229px;
+    top: 201px;
+    left: 270px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .overlap-3 {
+    position: absolute;
+    width: 709px;
+    height: 440px;
+    top: 144px;
+    left: 323px;
+  }
+  
+  .list-of-products .element-nwhbaqyl {
+    width: 150px;
+    height: 150px;
+    top: 202px;
+    left: 481px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .uxksswrf {
+    width: 144px;
+    height: 144px;
+    top: 204px;
+    left: 122px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .text-wrapper-17 {
+    position: absolute;
+    width: 56px;
+    top: 306px;
+    left: 23px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-18 {
+    width: 89px;
+    top: 334px;
+    left: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-19 {
+    width: 105px;
+    top: 333px;
+    left: 351px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-20 {
+    width: 140px;
+    top: 328px;
+    left: 365px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .untitled-design-5 {
+    width: 397px;
+    height: 363px;
+    top: 0;
+    left: 150px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .rectangle-7 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 171px;
+    left: 445px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .rectangle-8 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 181px;
+    left: 87px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .uxksswrf-2 {
+    width: 209px;
+    height: 209px;
+    top: 169px;
+    left: 94px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .element-2 {
+    width: 169px;
+    height: 169px;
+    top: 201px;
+    left: 474px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .overlap-4 {
+    position: absolute;
+    width: 1395px;
+    height: 582px;
+    top: 0;
+    left: 45px;
+  }
+  
+  .list-of-products .text-wrapper-21 {
+    position: absolute;
+    width: 187px;
+    top: 485px;
+    left: 986px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .rectangle-9 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 311px;
+    left: 1071px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  
+  .list-of-products .text-wrapper-22 {
+    width: 89px;
+    top: 469px;
+    left: 982px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .element-idgljuk {
+    position: absolute;
+    width: 211px;
+    height: 211px;
+    top: 305px;
+    left: 1071px;
+    object-fit: cover;
+  }
+  
+  .list-of-products .group {
+    position: absolute;
+    width: 1350px;
+    height: 1px;
+    top: 121px;
+    left: 0;
+  }
+  
+  .list-of-products .group-wrapper {
+    height: 1px;
+  }
+  
+  .list-of-products .line-wrapper {
+    position: relative;
+    width: 1350px;
+    height: 1px;
+  }
+  
+  .list-of-products .line-2 {
+    position: absolute;
+    width: 1350px;
+    height: 2px;
+    top: -2px;
+    left: 0;
+  }
+  
+  .list-of-products .div-wrapper {
+    position: absolute;
+    width: 1307px;
+    height: 103px;
+    top: 0;
+    left: 27px;
+  }
+  
+  .list-of-products .group-2 {
+    height: 103px;
+  }
+  
+  .list-of-products .group-3 {
+    position: relative;
+    width: 1317px;
+    height: 103px;
+  }
+  
+  .list-of-products .search {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    left: 1127px;
+  }
+  
+  .list-of-products .shopping-cart {
+    position: absolute;
+    width: 45px;
+    height: 46px;
+    top: 39px;
+    left: 1262px;
+  }
+  
+  .list-of-products .user {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    left: 1194px;
+  }
+  
+  .list-of-products .text-wrapper-23 {
+    position: absolute;
+    width: 135px;
+    top: 41px;
+    left: 523px;
+    -webkit-text-stroke: 1px transparent;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-24 {
+    position: absolute;
+    width: 182px;
+    top: 40px;
+    left: 703px;
+    -webkit-text-stroke: 1px transparent;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-25 {
+    width: 178px;
+    top: 38px;
+    left: 930px;
+    -webkit-text-stroke: 1px transparent;
+    position: absolute;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-26 {
+    width: 139px;
+    top: 40px;
+    left: 152px;
+    -webkit-text-stroke: 1px transparent;
+    position: absolute;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-27 {
+    position: absolute;
+    width: 97px;
+    top: 40px;
+    left: 335px;
+    -webkit-text-stroke: 1px transparent;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .arrow-drop-down-4 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 41px;
+    left: 435px;
+  }
+  
+  .list-of-products .element-eaeb {
+    position: absolute;
+    width: 96px;
+    height: 103px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .list-of-products .untitled-design-6 {
+    width: 215px;
+    height: 389px;
+    top: 46px;
+    left: 1180px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .list-of-products .text-wrapper-28 {
+    position: absolute;
+    width: 373px;
+    top: 159px;
+    left: 58px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-29 {
+    position: absolute;
+    width: 99px;
+    top: 287px;
+    left: 61px;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .overlap-5 {
+    position: absolute;
+    width: 130px;
+    height: 35px;
+    top: 286px;
+    left: 160px;
+    background-image: url(./img/rectangle-118.svg);
+    background-size: 100% 100%;
+  }
+  
+  .list-of-products .text-wrapper-30 {
+    position: absolute;
+    width: 99px;
+    top: 5px;
+    left: 14px;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+    color: #504f4f;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .list-of-products .arrow-drop-down-5 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    left: 92px;
+  }
+  
+  .list-of-products .overlap-group-2 {
+    position: absolute;
+    width: 115px;
+    height: 42px;
+    top: 343px;
+    left: 60px;
+  }
+  
+  .list-of-products .text-wrapper-31 {
+    position: absolute;
+    width: 80px;
+    top: 5px;
+    left: 0;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .arrow-drop-down-6 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 0;
+    left: 73px;
+  }
+  
+  .list-of-products .overlap-6 {
+    position: absolute;
+    width: 166px;
+    height: 56px;
+    top: 397px;
+    left: 41px;
+  }
+  
+  .list-of-products .text-wrapper-32 {
+    position: absolute;
+    width: 123px;
+    top: 0;
+    left: 19px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .slider {
+    display: flex;
+    width: 166px;
+    height: 22px;
+    align-items: center;
+    gap: 16px;
+    padding: 11px 16px;
+    position: absolute;
+    top: 34px;
+    left: 0;
+  }
+  
+  .list-of-products .track {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 4px;
+    margin-top: -2.00px;
+    margin-bottom: -2.00px;
+    background-color: var(--system-colors-fills-secondary);
+    border-radius: 100px;
+  }
+  
+  .list-of-products .knob {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    top: -12px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    box-shadow: 0px 6px 13px #0000001f, 0px 0.5px 4px #0000001f;
+  }
+  
+  .list-of-products .separator {
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    top: 22px;
+    left: 16px;
+  }
+  
+  .list-of-products .rectangle-10 {
+    position: absolute;
+    width: 46px;
+    height: 21px;
+    top: 464px;
+    left: 61px;
+  }
+  
+  .list-of-products .rectangle-11 {
+    position: absolute;
+    width: 46px;
+    height: 21px;
+    top: 465px;
+    left: 145px;
+  }
+  
+  .list-of-products .check-box-outline-5 {
+    top: 589px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 60px;
+  }
+  
+  .list-of-products .check-box-outline-6 {
+    top: 717px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 60px;
+  }
+  
+  .list-of-products .check-indeterminate {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 466px;
+    left: 116px;
+  }
+  
+  .list-of-products .search-2 {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -2684px;
+    left: 4346px;
+  }
+  
+  .list-of-products .user-2 {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -2684px;
+    left: 4422px;
+  }
+  
+  .list-of-products .shopping-cart-2 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: -2676px;
+    left: 4506px;
+  }
+  
+  .list-of-products .text-wrapper-33 {
+    position: absolute;
+    width: 93px;
+    top: -2672px;
+    left: 425px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .arrow-drop-down-7 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: -2671px;
+    left: 3610px;
+  }
+  
+  .list-of-products .text-wrapper-34 {
+    position: absolute;
+    width: 116px;
+    top: -2672px;
+    left: 686px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .list-of-products .text-wrapper-35 {
+    width: 139px;
+    top: -2672px;
+    left: 936px;
+    position: absolute;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

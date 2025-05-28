@@ -293,3 +293,199 @@
     left: 733px;
     object-fit: cover;
   }
+
+/* List of Products Styles */
+.list-of-products {
+    background-color: #fffaea;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.list-of-products .div {
+    background-color: var(--variable-collection-color-3);
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+}
+
+.list-of-products .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 1001px;
+    top: 23px;
+    left: 0;
+}
+
+.list-of-products .overlap-group {
+    position: absolute;
+    width: 769px;
+    height: 464px;
+    top: 537px;
+    left: 671px;
+}
+
+.list-of-products .rectangle {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 111px;
+    left: 440px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+}
+
+.list-of-products .slider {
+    display: flex;
+    width: 166px;
+    height: 22px;
+    align-items: center;
+    gap: 16px;
+    padding: 11px 16px;
+    position: absolute;
+    top: 34px;
+    left: 0;
+}
+
+.list-of-products .track {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 4px;
+    margin-top: -2.00px;
+    margin-bottom: -2.00px;
+    background-color: var(--system-colors-fills-secondary);
+    border-radius: 100px;
+}
+
+.list-of-products .knob {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    top: -12px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    box-shadow: 0px 6px 13px #0000001f, 0px 0.5px 4px #0000001f;
+}
+
+.list-of-products .separator {
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    top: 22px;
+    left: 16px;
+}
+
+.list-of-products .rectangle-10 {
+    position: absolute;
+    width: 46px;
+    height: 21px;
+    top: 464px;
+    left: 61px;
+}
+
+.list-of-products .rectangle-11 {
+    position: absolute;
+    width: 46px;
+    height: 21px;
+    top: 465px;
+    left: 145px;
+}
+
+.list-of-products .check-box-outline-5 {
+    top: 589px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 60px;
+}
+
+.list-of-products .check-box-outline-6 {
+    top: 717px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 60px;
+}
+
+.list-of-products .check-indeterminate {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 466px;
+    left: 116px;
+}
+
+.list-of-products .search-2 {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -2684px;
+    left: 4346px;
+}
+
+.list-of-products .user-2 {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -2684px;
+    left: 4422px;
+}
+
+.list-of-products .shopping-cart-2 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: -2676px;
+    left: 4506px;
+}
+
+.list-of-products .text-wrapper-33 {
+    position: absolute;
+    width: 93px;
+    top: -2672px;
+    left: 425px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.list-of-products .arrow-drop-down-7 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: -2671px;
+    left: 3610px;
+}
+
+.list-of-products .text-wrapper-34 {
+    position: absolute;
+    width: 116px;
+    top: -2672px;
+    left: 686px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.list-of-products .text-wrapper-35 {
+    width: 139px;
+    top: -2672px;
+    left: 936px;
+    position: absolute;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+}
