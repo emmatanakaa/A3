@@ -866,7 +866,7 @@
   
   .list-of-products .text-wrapper-30 {
     position: absolute;
-    width: 99px;
+    z-index: 1;
     top: 5px;
     left: 14px;
     font-family: "Montserrat-Regular", Helvetica;
@@ -880,6 +880,7 @@
   
   .list-of-products .arrow-drop-down-5 {
     position: absolute;
+    z-index: 1;
     width: 24px;
     height: 24px;
     top: 5px;
@@ -1110,4 +1111,23 @@
     top: 120px;
     left: 0;
     z-index: 1;
+  }
+
+  .vertical-divider {
+    position: absolute;
+    top: 350px;
+    left: 270px;
+    height: 530px;
+    width: 1px;
+    object-fit: cover;
+  }
+
+  .default-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
   }

@@ -989,4 +989,42 @@
     left: 0;
     z-index: 1;
   }
+
+  .summary-line {
+    position: absolute;
+    width: 560px;
+    height: 1px;
+    top: 485px;
+    left: 200px;
+    object-fit: cover;
+  }
+
+  .payment-line {
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    top: 465px;
+    left: 865px;
+    object-fit: cover;
+  }
+
+  .delivery-line {
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    top: 552px;
+    left: 865px;
+    object-fit: cover;
+  }
+
+  .total-line {
+    position: absolute;
+    width: 234px;
+    height: 0.8px;
+    top: 625px;
+    left: 510px;
+    object-fit: cover;
+  }
+
+  
   

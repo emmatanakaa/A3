@@ -868,7 +868,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 670px;
+    top: 692px;
     left: 879px;
   }
   
@@ -876,7 +876,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 670px;
+    top: 692px;
     left: 913px;
   }
   
@@ -887,4 +887,39 @@
     left: 0;
     z-index: 1;
   }
-  
+
+  .total-line {
+    position: absolute;
+    width: 235px;
+    height: 1px;
+    top: 205px;
+    left: 35px;
+    object-fit: cover;
+  }
+
+  .section1-line {
+    position: absolute;
+    width: 830px;
+    height: 1.2px;
+    top: 430px;
+    left: 125px;
+    object-fit: cover;
+  }
+
+  .section2-line {
+    position: absolute;
+    width: 830px;
+    height: 1px;
+    top: 590px;
+    left: 125px;
+    object-fit: cover;
+  }
+
+  .section3-line {
+    position: absolute;
+    width: 830px;
+    height: 1px;
+    top: 750px;
+    left: 125px;
+    object-fit: cover;
+  }

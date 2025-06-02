@@ -28,10 +28,43 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
       }
+
+      .dropdown-popup {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 335px;
+        width: 200px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+      }
+
+      .dropdown-item {
+        padding: 12px 16px;
+        font-family: "Montserrat-Regular", Helvetica;
+        font-size: 16px;
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .dropdown-item:hover {
+        background-color: #F1ECDB;
+      }
     </style>
   </head>
   <body>
-    <!-- Add the popup and overlay HTML -->
+    <!-- Add the dropdown popup HTML -->
+    <div class="dropdown-popup" id="dropdownPopup">
+      <div class="dropdown-item">All Flowers</div>
+      <div class="dropdown-item">Bouquets</div>
+      <div class="dropdown-item">Single Flowers</div>
+      <div class="dropdown-item">Occasions</div>
+      <div class="dropdown-item">Seasonal</div>
+    </div>
+
+    <!-- Add the existing popup and overlay HTML -->
     <div class="overlay" id="overlay"></div>
     <div class="search-popup" id="searchPopup">
       <div class="box">
@@ -72,12 +105,12 @@
                       <div class="text-wrapper-4">Home</div>
                     </a>
                     <div class="text-wrapper-5">Shop</div>
-                    <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
+                    <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" onclick="toggleDropdown()" />
                     <img class="element-eaeb" src="Assets/logo-black.png" />
                   </div>
                 </div>
               </div>
-              <img class="header-line" src="Assets/Header Line.svg" alt="Header line" />
+              <img class="header-line" src="Assets/Line 6.svg" alt="Header line" />
               <a href="productpage.html">
                 <div class="text-wrapper-6">Opulent</div>
               </a>
@@ -87,10 +120,15 @@
               <img class="img" src="img/line-4.svg" />
               <img class="line-2" src="img/line-6.svg" />
               <div class="text-wrapper-10">PRODUCT</div>
+              <div class="text-wrapper-13">PRICE</div>
+              <div class="text-wrapper-14">QUANTITY</div>
+              <img class="section1-line" src="Assets/Line 5.svg" alt="Section1 line" />
               <div class="rectangle"></div>
               <div class="text-wrapper-11">$138.00</div>
                 <img class="wmmmewl" src="Assets/Flowers/Opulent.png" />
               <div class="text-wrapper-12">Order Summary</div>
+              <img class="section2-line" src="Assets/Line 5.svg" alt="Section2 line" />
+              <img class="section3-line" src="Assets/Line 5.svg" alt="Section3 line" />
             </div>
             <div class="text-wrapper-13">PRICE</div>
             <div class="text-wrapper-14">QUANTITY</div>
@@ -117,6 +155,7 @@
               <div class="text-wrapper-23">$0.00</div>
               <div class="text-wrapper-24">Discount</div>
               <div class="text-wrapper-25">Delivery Fee</div>
+              <img class="total-line" src="Assets/Line 8.svg" alt="Total line" />
               <div class="text-wrapper-26">Total</div>
               <img class="line-3" src="img/line-8.svg" />
             </div>
@@ -145,6 +184,7 @@
             <img class="uxksswrf" src="Assets/Flowers/Evie.png" />
           </div>
           <div class="overlap-8">
+            <img class="rectangle2x" src="Assets/Rectangle 9.svg" />
             <div class="text-wrapper-15">1</div>
             <img class="add" src="Assets/add.svg" />
             <img class="check-indeterminate" src="Assets/check_indeterminate_small copy.svg" />
@@ -174,7 +214,24 @@
         document.getElementById('searchPopup').style.display = 'none';
       }
 
+      function toggleDropdown() {
+        const dropdown = document.getElementById('dropdownPopup');
+        if (dropdown.style.display === 'block') {
+          dropdown.style.display = 'none';
+        } else {
+          dropdown.style.display = 'block';
+        }
+      }
+
       // Close popup when clicking outside
+      document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdownPopup');
+        const arrow = document.querySelector('.arrow-drop-down');
+        if (!dropdown.contains(event.target) && event.target !== arrow) {
+          dropdown.style.display = 'none';
+        }
+      });
+
       document.getElementById('overlay').addEventListener('click', closeSearchPopup);
     </script>
   </body>
