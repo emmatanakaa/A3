@@ -1,0 +1,59 @@
+.box {
+  width: 1440px;
+  height: 150px;
+}
+
+.box .group {
+  position: fixed;
+  width: 1442px;
+  height: 150px;
+  top: 0;
+  left: 0;
+}
+
+.box .overlap-group {
+  position: relative;
+  width: 1440px;
+  height: 150px;
+  background-color: #1a1917;
+}
+
+.box .text-wrapper {
+  position: absolute;
+  width: 174px;
+  top: 62px;
+  left: 119px;
+  -webkit-text-stroke: 1px transparent;
+  font-family: "Montserrat-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.box .line {
+  position: absolute;
+  width: 1216px;
+  height: 3px;
+  top: 108px;
+  left: 112px;
+  object-fit: cover;
+}
+
+.box .search {
+  position: absolute;
+  width: 49px;
+  height: 50px;
+  top: 47px;
+  left: 1273px;
+}
+
+.box .close {
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 47px;
+  left: 1211px;
+}

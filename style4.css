@@ -880,3 +880,11 @@
     left: 913px;
   }
   
+  .header-line {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+  }
+  

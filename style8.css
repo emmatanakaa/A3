@@ -1088,13 +1088,13 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .list-of-products .bar {
     position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 281px;
-    left: 1071px;
+    width: 590px;
+    height: 51px;
+    top: 165px;
+    left: 750px;
     z-index: 1;
   }
   
@@ -1103,7 +1103,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
   .header-line {
     position: absolute;
     width: 100%;
@@ -1111,4 +1111,3 @@
     left: 0;
     z-index: 1;
   }
-  

@@ -6,8 +6,47 @@
     <link rel="stylesheet" href="globals3.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style4.css" />
+    <link rel="stylesheet" href="stylesearch.css" />
+    <style>
+      .search-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+    </style>
   </head>
   <body>
+    <!-- Add the popup and overlay HTML -->
+    <div class="overlay" id="overlay"></div>
+    <div class="search-popup" id="searchPopup">
+      <div class="box">
+        <div class="group">
+          <div class="overlap-group">
+            <div class="text-wrapper">Bouquets</div>
+            <img class="line" src="Assets/Line 21.svg" />
+            <a href="searchresults.html">
+              <img class="search" src="Assets/search white.svg" />
+            </a>
+            <img class="close" src="Assets/close.svg" onclick="closeSearchPopup()" />
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="shopping-cart-page">
       <div class="overlap-wrapper">
         <div class="overlap">
@@ -21,7 +60,7 @@
               <div class="div-wrapper">
                 <div class="group-2">
                   <div class="group-3">
-                    <img class="search" src="Assets/search.svg" />
+                    <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
                     <a href="shoppingcartpage.html">
                       <img class="shopping-cart" src="Assets/Shopping cart.svg" />
                     </a>
@@ -38,6 +77,7 @@
                   </div>
                 </div>
               </div>
+              <img class="header-line" src="Assets/Header Line.svg" alt="Header line" />
               <a href="productpage.html">
                 <div class="text-wrapper-6">Opulent</div>
               </a>
@@ -51,7 +91,6 @@
               <div class="text-wrapper-11">$138.00</div>
                 <img class="wmmmewl" src="Assets/Flowers/Opulent.png" />
               <div class="text-wrapper-12">Order Summary</div>
-              <img class="untitled-design" src="Assets/3D Flower.png" />
             </div>
             <div class="text-wrapper-13">PRICE</div>
             <div class="text-wrapper-14">QUANTITY</div>
@@ -80,7 +119,6 @@
               <div class="text-wrapper-25">Delivery Fee</div>
               <div class="text-wrapper-26">Total</div>
               <img class="line-3" src="img/line-8.svg" />
-              <img class="untitled-design-2" src="Assets/3D Flower.png" />
             </div>
             <img class="delete" src="Assets/delete.svg" />
             <img class="favorite" src="Assets/favorite.svg" />
@@ -125,5 +163,19 @@
         </div>
       </div>
     </div>
+    <script>
+      function openSearchPopup() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('searchPopup').style.display = 'block';
+      }
+
+      function closeSearchPopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('searchPopup').style.display = 'none';
+      }
+
+      // Close popup when clicking outside
+      document.getElementById('overlay').addEventListener('click', closeSearchPopup);
+    </script>
   </body>
 </html>

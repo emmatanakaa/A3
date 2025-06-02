@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
   
@@ -16,6 +17,8 @@
     overflow: hidden;
     width: 1440px;
     height: 1024px;
+    transform: scale(0.89);
+    transform-origin: center center;
   }
   
   .home-page .overlap-group {
@@ -143,7 +146,7 @@
   
   .home-page .group-3 {
     position: relative;
-    width: 1317px;
+    width: 1307px;
     height: 103px;
   }
   
@@ -293,3 +296,12 @@
     left: 733px;
     object-fit: cover;
   }
+
+  .header-line {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+  }
+
