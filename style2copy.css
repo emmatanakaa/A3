@@ -32,14 +32,6 @@
     gap: 20px;
   }
   
-  .list-of-products .overlap-group {
-    position: absolute;
-    width: 769px;
-    height: 464px;
-    top: 537px;
-    left: 671px;
-  }
-  
   .list-of-products .rectangle {
     position: absolute;
     width: 221px;
@@ -86,21 +78,8 @@
     position: absolute;
     object-fit: cover;
   }
-  
-  .list-of-products .text-wrapper {
-    position: absolute;
-    width: 89px;
-    top: 269px;
-    left: 0;
-    transform: rotate(45deg);
-    font-family: "Montserrat-Light", Helvetica;
-    font-weight: 300;
-    color: #3d1b10;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
+
+
   .list-of-products .text-wrapper-2 {
     width: 112px;
     top: 274px;
@@ -139,26 +118,7 @@
     border-radius: 2px;
     transform: rotate(-45deg);
   }
-  
-  .list-of-products .rectangle-4 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 116px;
-    left: 88px;
-    background-color: #000000;
-    border-radius: 2px;
-    transform: rotate(-45deg);
-  }
-  
-  .list-of-products .element-rdmajfjf {
-    width: 250px;
-    height: 250px;
-    top: 89px;
-    left: 73px;
-    position: absolute;
-    object-fit: cover;
-  }
+
   
   .list-of-products .img {
     width: 189px;
@@ -168,21 +128,7 @@
     position: absolute;
     object-fit: cover;
   }
-  
-  .list-of-products .text-wrapper-4 {
-    width: 137px;
-    top: 269px;
-    left: 12px;
-    position: absolute;
-    transform: rotate(45deg);
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #3d1b10;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
+
   .list-of-products .untitled-design-2 {
     width: 458px;
     height: 200px;
@@ -226,45 +172,6 @@
     top: 0;
     left: 290px;
     object-fit: cover;
-  }
-  
-  .list-of-products .text-wrapper-5 {
-    width: 89px;
-    top: 466px;
-    left: 310px;
-    position: absolute;
-    transform: rotate(45deg);
-    font-family: "Montserrat-Light", Helvetica;
-    font-weight: 300;
-    color: #3d1b10;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .text-wrapper-6 {
-    position: absolute;
-    width: 187px;
-    top: 484px;
-    left: 315px;
-    transform: rotate(45deg);
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #3d1b10;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .rectangle-6 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 314px;
-    left: 401px;
-    background-color: #000000;
-    border-radius: 2px;
-    transform: rotate(-45deg);
   }
   
   .list-of-products .text-wrapper-7 {
@@ -462,15 +369,6 @@
     object-fit: cover;
   }
   
-  .list-of-products .wmmmewl {
-    position: absolute;
-    width: 221px;
-    height: 221px;
-    top: 317px;
-    left: 401px;
-    object-fit: cover;
-  }
-  
   .list-of-products .untitled-design-4 {
     width: 287px;
     height: 229px;
@@ -497,107 +395,11 @@
     object-fit: cover;
   }
   
-  .list-of-products .uxksswrf {
-    width: 144px;
-    height: 144px;
-    top: 204px;
-    left: 122px;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .text-wrapper-17 {
-    position: absolute;
-    width: 56px;
-    top: 306px;
-    left: 23px;
-    transform: rotate(45deg);
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #3d1b10;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .text-wrapper-18 {
-    width: 89px;
-    top: 334px;
-    left: 0;
-    position: absolute;
-    transform: rotate(45deg);
-    font-family: "Montserrat-Light", Helvetica;
-    font-weight: 300;
-    color: #3d1b10;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .text-wrapper-19 {
-    width: 105px;
-    top: 333px;
-    left: 351px;
-    position: absolute;
-    transform: rotate(45deg);
-    font-family: "Montserrat-Light", Helvetica;
-    font-weight: 300;
-    color: #3d1b10;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .text-wrapper-20 {
-    width: 140px;
-    top: 328px;
-    left: 365px;
-    position: absolute;
-    transform: rotate(45deg);
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #3d1b10;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
   .list-of-products .untitled-design-5 {
     width: 397px;
     height: 363px;
     top: 0;
     left: 150px;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .rectangle-7 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 171px;
-    left: 445px;
-    background-color: #000000;
-    border-radius: 2px;
-    transform: rotate(-45deg);
-  }
-  
-  .list-of-products .rectangle-8 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 181px;
-    left: 87px;
-    background-color: #000000;
-    border-radius: 2px;
-    transform: rotate(-45deg);
-  }
-  
-  .list-of-products .uxksswrf-2 {
-    width: 209px;
-    height: 209px;
-    top: 169px;
-    left: 94px;
     position: absolute;
     object-fit: cover;
   }
@@ -617,54 +419,6 @@
     height: 582px;
     top: 0;
     left: 45px;
-  }
-  
-  .list-of-products .text-wrapper-21 {
-    position: absolute;
-    width: 187px;
-    top: 485px;
-    left: 986px;
-    transform: rotate(45deg);
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #3d1b10;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .rectangle-9 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 311px;
-    left: 1071px;
-    background-color: #000000;
-    border-radius: 2px;
-    transform: rotate(-45deg);
-  }
-  
-  .list-of-products .text-wrapper-22 {
-    width: 89px;
-    top: 469px;
-    left: 982px;
-    position: absolute;
-    transform: rotate(45deg);
-    font-family: "Montserrat-Light", Helvetica;
-    font-weight: 300;
-    color: #3d1b10;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .element-idgljuk {
-    position: absolute;
-    width: 211px;
-    height: 211px;
-    top: 305px;
-    left: 1071px;
-    object-fit: cover;
   }
   
   .list-of-products .group {
@@ -891,7 +645,320 @@
     left: 92px;
     z-index: 1;
   }
+
+  .jewel {
+    position: absolute;
+    width: 300px;
+    height: 2004px;
+    top: 537px;
+    left: 671px;
+  }
+
+  .jewel .omyztkb {
+    width: 152px;
+    height: 152px;
+    top: 145px;
+    left: 475px;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .jewel .rectangle-3 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 111px;
+    left: 440px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
   
+  .jewel .text-wrapper-2 {
+    width: 112px;
+    top: 274px;
+    left: 347px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .jewel .text-wrapper-3 {
+    position: absolute;
+    width: 129px;
+    top: 263px;
+    left: 364px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .alexa {
+    position: absolute;
+    width: 300px;
+    height: 2004px;
+    top: 537px;
+    left: 500px;
+  }
+
+  .alexa .rectangle-4 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 116px;
+    left: 88px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+
+  .alexa .element-rdmajfjf {
+    width: 250px;
+    height: 250px;
+    top: 89px;
+    left: 73px;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .alexa .text-wrapper-4 {
+    width: 137px;
+    top: 269px;
+    left: 12px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .alexa .text-wrapper {
+    position: absolute;
+    width: 89px;
+    top: 269px;
+    left: 0;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .opulent {
+    position: absolute;
+    width: 300px;
+    height: 2004px;
+    top: 300px;
+    left: 450px;
+  }
+
+  .opulent .rectangle-6 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 314px;
+    left: 401px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+
+  .opulent .wmmmewl {
+    position: absolute;
+    width: 221px;
+    height: 221px;
+    top: 317px;
+    left: 401px;
+    object-fit: cover;
+  }
+
+  .opulent .text-wrapper-6 {
+    position: absolute;
+    width: 187px;
+    top: 484px;
+    left: 315px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .opulent .text-wrapper-5 {
+    width: 89px;
+    top: 466px;
+    left: 310px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .daily-surprise .rectangle-9 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 311px;
+    left: 1071px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  
+  .daily-surprise .element-idgljuk {
+    position: absolute;
+    width: 211px;
+    height: 211px;
+    top: 305px;
+    left: 1071px;
+    object-fit: cover;
+  }
+  
+  .daily-surprise .text-wrapper-21 {
+    position: absolute;
+    width: 187px;
+    top: 485px;
+    left: 986px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .daily-surprise .text-wrapper-22 {
+    width: 89px;
+    top: 469px;
+    left: 982px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .joni .text-wrapper-20 {
+    width: 140px;
+    top: 328px;
+    left: 365px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .joni .text-wrapper-19 {
+    width: 105px;
+    top: 333px;
+    left: 351px;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+    
+  .joni .rectangle-7 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 171px;
+    left: 445px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+
+  .joni .uxksswrf {
+    width: 144px;
+    height: 144px;
+    top: 204px;
+    left: 122px;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .evie .uxksswrf-2 {
+    width: 209px;
+    height: 209px;
+    top: 169px;
+    left: 94px;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .evie .text-wrapper-17 {
+    position: absolute;
+    width: 56px;
+    top: 306px;
+    left: 23px;
+    transform: rotate(45deg);
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .evie .text-wrapper-18 {
+    width: 89px;
+    top: 334px;
+    left: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: "Montserrat-Light", Helvetica;
+    font-weight: 300;
+    color: #3d1b10;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .evie .rectangle-8 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 181px;
+    left: 87px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+
   .list-of-products .overlap-group-2 {
     position: absolute;
     width: 115px;
@@ -1122,8 +1189,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 12%;
+    height: 12%;
     z-index: 0;
     object-fit: cover;
   }
@@ -1172,85 +1239,3 @@
     }
   }
   
-  /* --- Common Styles for all Flower Items (adjust these to your design) --- */
-/* Select all your flower item classes: */
-.jewel,
-.alexa,
-.opulent,
-.evie,
-.joni,
-.daily-surprise {
-  display: flex;             /* Use Flexbox for internal content alignment */
-  flex-direction: column;    /* Stack content (image, price, name) vertically */
-  align-items: center;       /* Horizontally center content within each item */
-  padding: 20px;
-  border: 1px solid #eee;    /* Subtle border for visual separation */
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Soft shadow for depth */
-  background-color: #fff;
-  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
-}
-
-/* Ensure images scale correctly within their containers */
-.jewel img,
-.alexa img,
-.opulent img,
-.evie img,
-.joni img:first-of-type, /* Targeting the first img in Joni if multiple are there */
-.daily-surprise img {
-  max-width: 50%;
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 15px; /* Space between image and text */
-}
-
-/* Adjust text styles within each item */
-.jewel .text-wrapper-2, .alexa .text-wrapper, .opulent .text-wrapper-5,
-.evie .text-wrapper-18, .joni .text-wrapper-19, .daily-surprise .text-wrapper-22 {
-    font-size: 1.3em; /* Larger for price */
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.jewel .text-wrapper-3, .alexa .text-wrapper-4, .opulent .text-wrapper-6,
-.evie .text-wrapper-17, .joni .text-wrapper-20, .daily-surprise .text-wrapper-21 {
-    font-size: 1.1em; /* For product name */
-    color: #666;
-}
-
-
-/* --- Grid Layout for the Main Flower Gallery Container --- */
-
-.flower-gallery {
-  display: grid; /* Turns the container into a CSS Grid */
-  gap: 30px; /* Space between grid items */
-  padding: 20px; /* Padding around the entire gallery */
-  max-width: 1200px; /* Max width to keep content readable on very wide screens */
-  margin: 40px auto; /* Centers the gallery horizontally and adds vertical space */
-}
-
-/* Default Layout: 3 Columns (for larger screens like desktops) */
-.flower-gallery {
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
-}
-
-/* --- Responsive Breakpoints --- */
-
-/* For Medium Screens (e.g., Tablets, small laptops - up to 768px wide) */
-@media (max-width: 768px) {
-  .flower-gallery {
-    grid-template-columns: repeat(2, 1fr); /* Change to 2 equal columns */
-    gap: 25px; /* Slightly less gap for smaller screens */
-    padding: 15px;
-  }
-}
-
-/* For Small Screens (e.g., Mobile Phones - up to 480px wide) */
-@media (max-width: 480px) {
-  .flower-gallery {
-    grid-template-columns: 1fr; /* Change to a single column */
-    gap: 20px; /* Adjust gap */
-    padding: 10px;
-  }
-}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals3.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style3copy.css" />
+    <link rel="stylesheet" href="stylesearch.css" />
+    <style>
+      .search-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the popup and overlay HTML -->
+    <div class="overlay" id="overlay"></div>
+    <div class="search-popup" id="searchPopup">
+      <div class="box">
+        <div class="group">
+          <div class="overlap-group">
+            <div class="text-wrapper">Bouquets</div>
+            <img class="line" src="Assets/Line 21.svg" />
+            <a href="searchresults.html">
+              <img class="search" src="Assets/search white.svg" />
+            </a>
+            <img class="close" src="Assets/close.svg" onclick="closeSearchPopup()" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <nav class="navigation">
+            <div class="nav-content">
+              <img class="element-eaeb" src="Assets/logo-black.png" />
+              <div class="nav-links">
+                <a href="index.html" class="text-home">Home</a>
+                <div class="text-shop">Shop</div>
+                <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
+                <div class="text-about">About</div>
+                <div class="text-delivery">Delivery</div>
+                <div class="text-contact">Contact</div>
+              </div>
+              <div class="nav-icons">
+                <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
+                <img class="user" src="Assets/User.svg" />
+                <a href="listofproducts.html">
+                  <img class="shopping-cart" src="Assets/Shopping cart.svg" />
+                </a>
+              </div>
+            </div>
+            <img class="header-line" src="Assets/Header Line.svg" alt="Header line" />
+          </nav>
+
+    <div class="flower-image">
+    <div class="rectangle"></div>
+    <img class="wmmmewl" src="Assets/Flowers/Opulent.png" />
+    </div>
+
+    <div class="opulent">
+    <div class="text-wrapper-3">Opulent</div>
+    <div class="text-wrapper-5">$138.00</div>
+    </div>
+
+    <div class="product-details">
+    <p class="large-bright-bouquet">
+        <span class="span">Large Bright Bouquet in a Glass Vase<br /></span>
+        <span class="text-wrapper-4"
+          >True to its namesake, Opulent, this large bouquet is an astounding sight. A bright combination of pink
+          and yellow in lilies, roses, gerberas, and alstroemeria, highlighted by green and purple
+          foliage. Standing tall in a glass vase, this gift will amaze them. </span
+        >
+      </p>
+
+    <div class="size-options">
+    <div class="text-wrapper-6">Size Options</div>
+    <div class="rectangle-4"></div>
+    <div class="text-wrapper-9">$138.00</div>
+    <div class="text-wrapper-10">Standard (As displayed)</div>
+    <div class="text-wrapper-11">Premium (Extra flowers)</div>
+    <div class="text-wrapper-12">$165.00</div>
+    </div>
+
+    <div class="add-to-cart">
+    <a href="shoppingcartpage.html">
+        <div class="rectangle-3"></div>
+        <div class="text-wrapper-7">Add to cart</div>
+      </a>
+    </div>
+
+    <div class="quantity-options">
+      <img class="rectangle-2" src="Assets/Rectangle 9.svg" />
+      <div class="text-wrapper-8">1</div>
+      <img class="add" src="Assets/add.svg" />
+      <img class="check-indeterminate" src="Assets/check_indeterminate_small copy.svg" />
+      <div class="rectangle-5"></div>
+    </div>
+</div>
+
+    <div class="back-to-products">
+        <a href="index.html" class="text-wrapper-13">Home page</a>
+        <img class="arrow-forward-2" src="Assets/arrow_forward.svg" />
+      <a href="listofproducts.html" class="text-wrapper">Bouquets</a>
+      <img class="arrow-forward" src="Assets/arrow_forward.svg" />
+      <div class="text-wrapper-2">Opulent</div>
+    </div>
+  </div>
+  <div class="group">
+    <div class="group-wrapper">
+      <div class="line-wrapper"><img class="line" src="img/line-3.svg" /></div>
+    </div>
+  </div>
+</div>
+
+
+    <script>
+      function openSearchPopup() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('searchPopup').style.display = 'block';
+      }
+
+      function closeSearchPopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('searchPopup').style.display = 'none';
+      }
+
+      // Close popup when clicking outside
+      document.getElementById('overlay').addEventListener('click', closeSearchPopup);
+    </script>
+  </body>
+</html>

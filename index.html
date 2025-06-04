@@ -28,6 +28,82 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
       }
+
+      /* Responsive styles for Surface Pro 7 */
+      @media screen and (max-width: 1368px) {
+        .home-page {
+          width: 100%;
+          max-width: 1368px;
+          margin: 0 auto;
+        }
+
+        .overlap-group {
+          width: 100%;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+
+        .group-2 {
+          width: 100%;
+          max-width: 1328px;
+          margin: 0 auto;
+        }
+
+        .group-3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 10px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: auto;
+          gap: 20px;
+        }
+
+        .text-wrapper-5,
+        .text-wrapper-6,
+        .text-wrapper-7,
+        .text-wrapper-8,
+        .text-wrapper-9 {
+          white-space: nowrap;
+        }
+
+        .header-line {
+          width: 100%;
+          max-width: 1328px;
+        }
+
+        .in-bloom-for-every {
+          font-size: calc(24px + 2vw);
+          text-align: center;
+          width: 100%;
+          margin: 20px auto;
+        }
+
+        img.element-eaeb {
+          max-width: 150px;
+          height: auto;
+        }
+
+        .search-popup .box {
+          width: 90%;
+          max-width: 1328px;
+          margin: 0 auto;
+        }
+      }
+
+      /* Additional adjustments for height */
+      @media screen and (max-height: 912px) {
+        .home-page {
+          min-height: 100vh;
+        }
+
+        .overlap-group {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -37,7 +113,7 @@
       <div class="box">
         <div class="group">
           <div class="overlap-group">
-            <div class="text-wrapper">Bouquets</div>
+            <div class="search-text">Bouquets</div>
             <img class="line" src="Assets/Line 21.svg" />
             <a href="searchresults.html">
               <img class="search" src="Assets/search white.svg" />
@@ -48,47 +124,40 @@
       </div>
     </div>
     <div class="home-page">
-      <div class="overlap-group-wrapper">
-        <div class="overlap-group">
-          <p class="in-bloom-for-every">
-            <span class="text-wrapper">In</span>
-            <span class="span">&nbsp;</span>
-            <span class="text-wrapper-2">Bloom</span>
-            <span class="text-wrapper-3">&nbsp;</span>
-            <span class="text-wrapper">for</span>
-            <span class="text-wrapper-3">&nbsp;</span>
-            <span class="text-wrapper-4">Every</span>
-            <span class="text-wrapper-3">&nbsp;</span>
-            <span class="text-wrapper">Occasion</span>
-          </p>
-          <div class="div">North Flowers:</div>
+      <div class="main-container">
+        <nav class="navigation">
+          <div class="nav-content">
+            <img class="element-eaeb" src="Assets/logo-black.png" />
+            <div class="nav-links">
+              <a href="index.html" class="text-wrapper-8">Home</a>
+              <div class="text-wrapper-9">Shop</div>
+              <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
+              <div class="text-wrapper-5">About</div>
+              <div class="text-wrapper-6">Delivery</div>
+              <div class="text-wrapper-7">Contact</div>
+            </div>
+            <div class="nav-icons">
+              <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
+              <img class="user" src="Assets/User.svg" />
+              <a href="listofproducts.html">
+                <img class="shopping-cart" src="Assets/Shopping cart.svg" />
+              </a>
+            </div>
+          </div>
           <img class="header-line" src="Assets/Header Line.svg" alt="Header line" />
-          <div class="group">
-            <div class="group-wrapper">
-              <div class="line-wrapper"><img class="line" src="img/line-3.svg" /></div>
-            </div>
+        </nav>
+
+        <main class="main-content">
+          <div class="text-section">
+            <h1 class="title">North Flowers:</h1>
+            <p class="in-bloom-for-every">
+              <span class="text-wrapper">In</span><span class="text-wrapper-2">Bloom</span>
+              <span class="text-wrapper">for</span><br>
+              <span class="text-wrapper-4">Every</span><br>
+              <span class="text-wrapper">Occasion</span>
+            </p>
           </div>
-          <div class="div-wrapper">
-            <div class="group-2">
-              <div class="group-3">
-                <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
-                <a href="listofproducts.html">
-                  <img class="shopping-cart" src="Assets/Shopping cart.svg" />
-                </a>
-                <img class="user" src="Assets/User.svg" />
-                <div class="text-wrapper-5">About</div>
-                <div class="text-wrapper-6">Delivery</div>
-                <div class="text-wrapper-7">Contact</div>
-                <a href="index.html">
-                  <div class="text-wrapper-8">Home</div>
-                </a>
-                <div class="text-wrapper-9">Shop</div>
-                <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
-                <img class="element-eaeb" src="Assets/logo-black.png" />
-              </div>
-            </div>
-          </div>
-        </div>
+        </main>
       </div>
     </div>
     <script>

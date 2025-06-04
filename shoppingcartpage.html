@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style4.css" />
     <link rel="stylesheet" href="stylesearch.css" />
+    <link rel="stylesheet" href="shop.css" />
     <style>
       .search-popup {
         display: none;
@@ -27,6 +28,16 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
+      }
+
+      .box {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 1440px;
+        height: 528px;
+        z-index: 1000;
       }
 
       .dropdown-popup {
@@ -52,19 +63,46 @@
       .dropdown-item:hover {
         background-color: #F1ECDB;
       }
+
+      .text-wrapper-8:hover {
+        color: #F1ECDB;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
-    <!-- Add the dropdown popup HTML -->
-    <div class="dropdown-popup" id="dropdownPopup">
-      <div class="dropdown-item">All Flowers</div>
-      <div class="dropdown-item">Bouquets</div>
-      <div class="dropdown-item">Single Flowers</div>
-      <div class="dropdown-item">Occasions</div>
-      <div class="dropdown-item">Seasonal</div>
+    <!-- Shop dropdown -->
+    <div class="box" id="dropdownPopup">
+      <div class="group">
+        <div class="overlap-group">
+          <div class="text-wrapper">Sympathy</div>
+          <div class="div">Congratulations</div>
+          <div class="text-wrapper-2">Seasons Best</div>
+          <div class="text-wrapper-3">Potted Plants</div>
+          <div class="text-wrapper-4">Specials</div>
+          <div class="text-wrapper-5">Natives</div>
+          <div class="text-wrapper-6">By Flowers</div>
+          <div class="text-wrapper-7">Roses</div>
+          <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
+          <div class="text-wrapper-9">Arrangements</div>
+          <div class="text-wrapper-10">Corporate</div>
+          <div class="text-wrapper-11">Anniversary</div>
+          <div class="text-wrapper-12">New Baby</div>
+          <div class="text-wrapper-13">Valentine's Day</div>
+          <div class="text-wrapper-14">Mother's Day</div>
+          <div class="text-wrapper-15">Birthday</div>
+          <div class="text-wrapper-16">Romance</div>
+          <div class="text-wrapper-17">Thank You</div>
+          <div class="text-wrapper-18">Get Well</div>
+          <div class="text-wrapper-19">Shop our collection</div>
+          <div class="text-wrapper-20">By Ocassion</div>
+          <img class="line" src="img/line-23.svg" />
+          <img class="img" src="img/line-24.svg" />
+        </div>
+      </div>
     </div>
 
-    <!-- Add the existing popup and overlay HTML -->
+    <!-- Search popup overlay -->
     <div class="overlay" id="overlay"></div>
     <div class="search-popup" id="searchPopup">
       <div class="box">
@@ -115,8 +153,7 @@
                 <div class="text-wrapper-6">Opulent</div>
               </a>
               <div class="text-wrapper-7">Size: Standard</div>
-              <div class="text-wrapper-8">In vase</div>
-              <div class="text-wrapper-9">Bouquets</div>
+              <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
               <img class="img" src="img/line-4.svg" />
               <img class="line-2" src="img/line-6.svg" />
               <div class="text-wrapper-10">PRODUCT</div>
