@@ -1,4 +1,5 @@
 .home-page {
+    background-color: #FFFAEA;
     background-image: url('Assets/Home\ page.jpg');
     background-size: cover;
     background-position: center;
@@ -26,7 +27,8 @@
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #FFFAEA
+    backdrop-filter: blur(5px);
 }
 
 .nav-content {
@@ -53,14 +55,16 @@
 
 .main-content {
     margin-top: 150px;
-    padding: 40px 20px;
+    padding: 30px 40px;
     position: relative;
+    text-align: left;
 }
 
 .text-section {
     max-width: 921px;
     margin-left: 91px;
     position: relative;
+    text-align: left;
 }
 
 .title {
@@ -70,50 +74,30 @@
     font-size: 96px;
     line-height: 1.2;
     margin: 0;
-    position: relative;
+    margin-bottom: 20px;
 }
 
-.in-bloom-for-every {
-    font-family: "Montserrat-Medium", Helvetica;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 1.2;
-    margin: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.text {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 0 30px 0;
 }
 
-.text-wrapper, 
-.text-wrapper-2,
-.text-wrapper-4 {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    font-size: inherit;
-    text-align: left;
-    white-space: nowrap;
+.in-bloom-wrapper {
+  font-size: 75px;
+  line-height: 1.4;
+  text-align: left;
 }
 
-.search-text {
-    position: absolute;
-    width: 174px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: -20px;
-    font-family: "Montserrat-Medium", Helvetica;
-    font-weight: 300;
-    color: #FFFFFF;
-    font-size: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-    text-align: center;
+.line-one,
+.line-two,
+.line-three {
+  display: block;
+  margin-bottom: 20px;
+  white-space: nowrap;
 }
+
 
 /* Navigation text styles */
 .text-wrapper-5,
@@ -131,16 +115,19 @@
 .text-wrapper {
     font-weight: 500;
     color: #3d1b10;
+    text-align: left;
 }
 
 .text-wrapper-2 {
-    font-family: "Figma Hand-Regular", Helvetica;
+    font-family: 'Just Another Hand', sans-serif;
     color: #7e2526;
+    text-align: left;
 }
 
 .text-wrapper-4 {
     font-family: "Raleway-Regular", Helvetica;
     color: #7e2526;
+    text-align: left;
 }
 
 /* Icons */
@@ -151,6 +138,7 @@
     width: clamp(25px, 3vw, 45px);
     height: auto;
     cursor: pointer;
+    margin-left: -5px; /* Or whatever spacing you need */
 }
 
 .element-eaeb {
@@ -179,9 +167,12 @@
         width: 95%;
     }
     
-    .title,
-    .in-bloom-for-every {
+    .title {
         font-size: 72px;
+    }
+
+    .in-bloom-wrapper {
+      font-size: 70px;
     }
 }
 
@@ -215,15 +206,23 @@
         margin-top: 15px;
     }
     
-    .title,
-    .in-bloom-for-every {
+    .title {
         font-size: 60px;
+    }
+
+    .in-bloom-wrapper {
+      font-size: 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .main-container {
-        padding: 0 10px;
+        padding: 0 1px;
+    }
+
+    .main-content {
+      margin-top: 180px;
+      padding: 5px 20px;
     }
     
     .text-section {
@@ -243,9 +242,71 @@
         margin-top: 10px;
     }
     
-    .title,
-    .in-bloom-for-every {
-        font-size: 48px;
+    .title {
+        font-size: 35px;
+    }
+
+    .text{
+      width: 200px;
+    }
+
+    .home-page {
+      background-size: cover;
+      background-position: right 200px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      width: 100%;
+  }
+
+  .search-popup .overlap-group {
+    width: 50%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+    
+}
+
+@media screen and (max-width: 390px) {
+    .navigation {
+        padding: 8px 0;
+    }
+
+    .nav-content {
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links .arrow-drop-down {
+        width: 10px;
+    }
+
+    .text-wrapper-5,
+    .text-wrapper-6,
+    .text-wrapper-7,
+    .text-wrapper-8,
+    .text-wrapper-9 {
+        font-size: 10px;
+    }
+
+    .nav-icons {
+        gap: 15px;
+    }
+
+    .nav-icons img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .element-eaeb {
+        width: 50px;
+    }
+
+    .header-line {
+        margin-top: 10px;
     }
 }
 

@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylesearch.css" />
-    <style>
+    <link rel="stylesheet" href="shop.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+   <style>
       .search-popup {
         display: none;
         position: fixed;
@@ -27,6 +37,96 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
+      }
+
+      .drop-down-box {
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1440px;
+        height: 528px;
+        z-index: 1000;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      }
+
+      .dropdown-popup {
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 335px;
+        width: 200px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+      }
+
+      .dropdown-item {
+        padding: 12px 16px;
+        font-family: "Montserrat-Regular", Helvetica;
+        font-size: 16px;
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .dropdown-item:hover {
+        background-color: #F1ECDB;
+      }
+
+      .text-wrapper-8:hover {
+        color: #F1ECDB;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 390px) {
+        .drop-down-box {
+          top: 120px;
+          width: 100%;
+          height: auto;
+          padding: 15px;
+          left: 0;
+          transform: none;
+        }
+
+        .drop-down-group {
+          width: 100%;
+        }
+
+        .drop-down-overlap-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          padding: 8px;
+        }
+
+        .drop-down-overlap-group div {
+          width: 100%;
+          font-size: 11px;
+          padding: 6px;
+          text-align: center;
+          border-bottom: 1px solid #F1ECDB;
+        }
+
+        .text-wrapper-19,
+        .text-wrapper-20 {
+          font-size: 13px;
+          font-weight: bold;
+          color: #3d1b10;
+          margin-top: 12px;
+          background-color: #F1ECDB;
+          width: 100%;
+          padding: 8px !important;
+        }
+
+        .drop-down-overlap-group .line,
+        .drop-down-overlap-group .img {
+          display: none;
+        }
       }
 
       /* Responsive styles for Surface Pro 7 */
@@ -104,9 +204,42 @@
           padding-bottom: 20px;
         }
       }
+
     </style>
   </head>
   <body>
+
+    <!-- Shop dropdown -->
+    <div class="drop-down-box" id="dropdownPopup">
+      <div class="drop-down-group">
+        <div class="drop-down-overlap-group">
+          <div class="text-wrapper">Sympathy</div>
+          <div class="div">Congratulations</div>
+          <div class="text-wrapper-2">Seasons Best</div>
+          <div class="text-wrapper-3">Potted Plants</div>
+          <div class="text-wrapper-4">Specials</div>
+          <div class="text-wrapper-5">Natives</div>
+          <div class="text-wrapper-6">By Flowers</div>
+          <div class="text-wrapper-7">Roses</div>
+          <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
+          <div class="text-wrapper-9">Arrangements</div>
+          <div class="text-wrapper-10">Corporate</div>
+          <div class="text-wrapper-11">Anniversary</div>
+          <div class="text-wrapper-12">New Baby</div>
+          <div class="text-wrapper-13">Valentine's Day</div>
+          <div class="text-wrapper-14">Mother's Day</div>
+          <div class="text-wrapper-15">Birthday</div>
+          <div class="text-wrapper-16">Romance</div>
+          <div class="text-wrapper-17">Thank You</div>
+          <div class="text-wrapper-18">Get Well</div>
+          <div class="text-wrapper-19">Shop our collection</div>
+          <div class="text-wrapper-20">By Ocassion</div>
+          <img class="line" src="img/line-23.svg" />
+          <img class="img" src="img/line-24.svg" />
+        </div>
+      </div>
+    </div>
+
     <!-- Add the popup and overlay HTML -->
     <div class="overlay" id="overlay"></div>
     <div class="search-popup" id="searchPopup">
@@ -130,8 +263,8 @@
             <img class="element-eaeb" src="Assets/logo-black.png" />
             <div class="nav-links">
               <a href="index.html" class="text-wrapper-8">Home</a>
-              <div class="text-wrapper-9">Shop</div>
-              <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
+              <div class="text-wrapper-9" onclick="toggleDropdown()">Shop</div>
+              <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" onclick="toggleDropdown()" />
               <div class="text-wrapper-5">About</div>
               <div class="text-wrapper-6">Delivery</div>
               <div class="text-wrapper-7">Contact</div>
@@ -148,31 +281,41 @@
         </nav>
 
         <main class="main-content">
-          <div class="text-section">
-            <h1 class="title">North Flowers:</h1>
-            <p class="in-bloom-for-every">
-              <span class="text-wrapper">In</span><span class="text-wrapper-2">Bloom</span>
-              <span class="text-wrapper">for</span><br>
-              <span class="text-wrapper-4">Every</span><br>
-              <span class="text-wrapper">Occasion</span>
-            </p>
-          </div>
+          <h1 class="title">North Flowers:</h1>
+          <img class="text" src="Assets/In Bloom for Every Occasion.png" alt="In Bloom for Every Occasion">
         </main>
       </div>
     </div>
     <script>
-      function openSearchPopup() {
-        document.getElementById('overlay').style.display = 'block';
-        document.getElementById('searchPopup').style.display = 'block';
-      }
-
-      function closeSearchPopup() {
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('searchPopup').style.display = 'none';
-      }
-
-      // Close popup when clicking outside
-      document.getElementById('overlay').addEventListener('click', closeSearchPopup);
-    </script>
+        function openSearchPopup() {
+          document.getElementById('overlay').style.display = 'block';
+          document.getElementById('searchPopup').style.display = 'block';
+        }
+  
+        function closeSearchPopup() {
+          document.getElementById('overlay').style.display = 'none';
+          document.getElementById('searchPopup').style.display = 'none';
+        }
+  
+        function toggleDropdown() {
+          const dropdown = document.getElementById('dropdownPopup');
+          if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+          } else {
+            dropdown.style.display = 'block';
+          }
+        }
+  
+        // Close popup when clicking outside
+        document.addEventListener('click', function(event) {
+          const dropdown = document.getElementById('dropdownPopup');
+          const arrow = document.querySelector('.arrow-drop-down');
+          if (!dropdown.contains(event.target) && event.target !== arrow) {
+            dropdown.style.display = 'none';
+          }
+        });
+  
+        document.getElementById('overlay').addEventListener('click', closeSearchPopup);
+      </script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 .list-of-products {
     background-color: #fffaea;
     display: flex;
@@ -10,171 +12,7 @@
   padding: 0;
   }
   
-  .list-of-products .div {
-    background-color: var(--variable-collection-color-3);
-    overflow: hidden;
-    width: 1440px;
-    height: 1024px;
-    position: relative;
-    transform: scale(0.890625);
-    transform-origin: center center;
-  }
-  
-  .list-of-products .overlap {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .list-of-products .rectangle {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 111px;
-    left: 440px;
-    background-color: #ffffff;
-    transform: rotate(-45deg);
-  }
-  
-  .list-of-products .rectangle-2 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 116px;
-    left: 88px;
-    background-color: #ffffff;
-    transform: rotate(-45deg);
-  }
-  
-  .list-of-products .omyztkb {
-    width: 152px;
-    height: 152px;
-    top: 145px;
-    left: 475px;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .element {
-    width: 214px;
-    height: 214px;
-    top: 110px;
-    left: 92px;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .untitled-design {
-    width: 256px;
-    height: 229px;
-    top: 0;
-    left: 513px;
-    position: absolute;
-    object-fit: cover;
-  }
-
-
-  .list-of-products .text-wrapper-2 {
-    width: 112px;
-    top: 274px;
-    left: 347px;
-    position: absolute;
-    transform: rotate(45deg);
-    font-family: "Montserrat-Light", Helvetica;
-    font-weight: 300;
-    color: #3d1b10;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .text-wrapper-3 {
-    position: absolute;
-    width: 129px;
-    top: 263px;
-    left: 364px;
-    transform: rotate(45deg);
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #3d1b10;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .list-of-products .rectangle-3 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 111px;
-    left: 440px;
-    background-color: #000000;
-    border-radius: 2px;
-    transform: rotate(-45deg);
-  }
-
-  
-  .list-of-products .img {
-    width: 189px;
-    height: 189px;
-    top: 122px;
-    left: 449px;
-    position: absolute;
-    object-fit: cover;
-  }
-
-  .list-of-products .untitled-design-2 {
-    width: 458px;
-    height: 200px;
-    top: 264px;
-    left: 163px;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .overlap-2 {
-    position: absolute;
-    width: 665px;
-    height: 652px;
-    top: 349px;
-    left: 0;
-  }
-  
-  .list-of-products .rectangle-5 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 314px;
-    left: 401px;
-    background-color: #ffffff;
-    transform: rotate(-45deg);
-  }
-  
-  .list-of-products .cqohht {
-    position: absolute;
-    width: 147px;
-    height: 147px;
-    top: 360px;
-    left: 438px;
-    object-fit: cover;
-  }
-  
-  .list-of-products .line {
-    position: absolute;
-    width: 1px;
-    height: 652px;
-    top: 0;
-    left: 290px;
-    object-fit: cover;
-  }
-  
-  .list-of-products .text-wrapper-7 {
+  .side-bar .text-wrapper-7 {
     top: 451px;
     left: 88px;
     position: absolute;
@@ -187,7 +25,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-8 {
+  .side-bar .text-wrapper-8 {
     position: absolute;
     width: 265px;
     top: 337px;
@@ -200,7 +38,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-9 {
+  .side-bar .text-wrapper-9 {
     position: absolute;
     width: 265px;
     top: 207px;
@@ -213,7 +51,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-10 {
+  .side-bar .text-wrapper-10 {
     position: absolute;
     width: 265px;
     top: 239px;
@@ -226,7 +64,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-11 {
+  .side-bar .text-wrapper-11 {
     top: 367px;
     left: 86px;
     position: absolute;
@@ -239,7 +77,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-12 {
+  .side-bar .text-wrapper-12 {
     position: absolute;
     width: 265px;
     top: 483px;
@@ -252,7 +90,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-13 {
+  .side-bar .text-wrapper-13 {
     position: absolute;
     width: 123px;
     top: 169px;
@@ -265,7 +103,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-14 {
+  .side-bar .text-wrapper-14 {
     position: absolute;
     width: 265px;
     top: 296px;
@@ -278,7 +116,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-15 {
+  .side-bar .text-wrapper-15 {
     position: absolute;
     width: 265px;
     top: 416px;
@@ -291,7 +129,7 @@
     line-height: normal;
   }
   
-  .list-of-products .text-wrapper-16 {
+  .side-bar .text-wrapper-16 {
     position: absolute;
     width: 265px;
     top: 296px;
@@ -304,7 +142,7 @@
     line-height: normal;
   }
   
-  .list-of-products .check-box-outline {
+  .side-bar .check-box-outline {
     position: absolute;
     width: 21px;
     height: 21px;
@@ -312,7 +150,7 @@
     left: 60px;
   }
   
-  .list-of-products .check-box-outline-2 {
+  .side-bar .check-box-outline-2 {
     top: 336px;
     position: absolute;
     width: 21px;
@@ -320,7 +158,7 @@
     left: 60px;
   }
   
-  .list-of-products .check-box-outline-3 {
+  .side-bar .check-box-outline-3 {
     top: 452px;
     position: absolute;
     width: 21px;
@@ -328,7 +166,7 @@
     left: 60px;
   }
   
-  .list-of-products .check-box-outline-4 {
+  .side-bar .check-box-outline-4 {
     top: 484px;
     position: absolute;
     width: 21px;
@@ -336,7 +174,7 @@
     left: 60px;
   }
   
-  .list-of-products .arrow-drop-down {
+  .side-bar .arrow-drop-down {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -344,7 +182,7 @@
     left: 100px;
   }
   
-  .list-of-products .arrow-drop-down-2 {
+  .side-bar .arrow-drop-down-2 {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -352,56 +190,12 @@
     left: 191px;
   }
   
-  .list-of-products .arrow-drop-down-3 {
+  .side-bar .arrow-drop-down-3 {
     position: absolute;
     width: 24px;
     height: 24px;
     top: 417px;
     left: 169px;
-  }
-  
-  .list-of-products .untitled-design-3 {
-    width: 609px;
-    height: 228px;
-    top: 424px;
-    left: 0;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .untitled-design-4 {
-    width: 287px;
-    height: 229px;
-    top: 201px;
-    left: 270px;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .overlap-3 {
-    position: absolute;
-    width: 709px;
-    height: 440px;
-    top: 144px;
-    left: 323px;
-  }
-  
-  .list-of-products .element-nwhbaqyl {
-    width: 150px;
-    height: 150px;
-    top: 202px;
-    left: 481px;
-    position: absolute;
-    object-fit: cover;
-  }
-  
-  .list-of-products .untitled-design-5 {
-    width: 397px;
-    height: 363px;
-    top: 0;
-    left: 150px;
-    position: absolute;
-    object-fit: cover;
   }
   
   .list-of-products .element-2 {
@@ -559,7 +353,7 @@
     line-height: normal;
   }
   
-  .list-of-products .arrow-drop-down-4 {
+  .side-bar .arrow-drop-down-4 {
     position: absolute;
     width: 45px;
     height: 45px;
@@ -585,7 +379,7 @@
     object-fit: cover;
   }
   
-  .list-of-products .text-wrapper-28 {
+  .side-bar .text-wrapper-28 {
     position: absolute;
     width: 373px;
     top: 159px;
@@ -599,7 +393,7 @@
     white-space: nowrap;
   }
   
-  .list-of-products .text-wrapper-29 {
+  .side-bar .text-wrapper-29 {
     position: absolute;
     width: 99px;
     top: 287px;
@@ -622,7 +416,7 @@
     background-size: 100% 100%;
   }
   
-  .list-of-products .text-wrapper-30 {
+  .side-bar .text-wrapper-30 {
     position: absolute;
     width: 99px;
     top: 8px;
@@ -637,7 +431,7 @@
     z-index: 1;
   }
   
-  .list-of-products .arrow-drop-down-5 {
+  .side-bar .arrow-drop-down-5 {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -862,6 +656,12 @@
     line-height: normal;
   }
 
+  .joni {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+  }
+
   .joni .text-wrapper-20 {
     width: 140px;
     top: 328px;
@@ -889,26 +689,45 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
-    
-  .joni .rectangle-7 {
+
+  .joni .element-nwhbaqyl {
+    width: 150px;
+    height: 150px;
+    top: 202px;
+    left: 481px;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .joni .rectangle-8 {
     position: absolute;
     width: 221px;
     height: 212px;
-    top: 171px;
-    left: 445px;
+    top: 202px;
+    left: 481px;
     background-color: #000000;
     border-radius: 2px;
     transform: rotate(-45deg);
   }
 
-  .joni .uxksswrf {
-    width: 144px;
-    height: 144px;
-    top: 204px;
-    left: 122px;
+  .evie {
     position: absolute;
-    object-fit: cover;
+    width: 300px;
+    height: 2004px;
+    top: 200px;
+    left: 450px;
+  }
+  
+    
+  .evie .rectangle-7 {
+    position: absolute;
+    width: 221px;
+    height: 212px;
+    top: 171px;
+    left: 94px;
+    background-color: #000000;
+    border-radius: 2px;
+    transform: rotate(-45deg);
   }
 
   .evie .uxksswrf-2 {
@@ -924,7 +743,7 @@
     position: absolute;
     width: 56px;
     top: 306px;
-    left: 23px;
+    left: 94px;
     transform: rotate(45deg);
     font-family: "Montserrat-SemiBold", Helvetica;
     font-weight: 600;
@@ -937,7 +756,7 @@
   .evie .text-wrapper-18 {
     width: 89px;
     top: 334px;
-    left: 0;
+    left: 94px;
     position: absolute;
     transform: rotate(45deg);
     font-family: "Montserrat-Light", Helvetica;
@@ -948,17 +767,6 @@
     line-height: normal;
   }
 
-  .evie .rectangle-8 {
-    position: absolute;
-    width: 221px;
-    height: 212px;
-    top: 181px;
-    left: 87px;
-    background-color: #000000;
-    border-radius: 2px;
-    transform: rotate(-45deg);
-  }
-
   .list-of-products .overlap-group-2 {
     position: absolute;
     width: 115px;
@@ -967,7 +775,7 @@
     left: 60px;
   }
   
-  .list-of-products .text-wrapper-31 {
+  .side-bar .text-wrapper-31 {
     position: absolute;
     width: 80px;
     top: 5px;
@@ -980,7 +788,7 @@
     line-height: normal;
   }
   
-  .list-of-products .arrow-drop-down-6 {
+  .side-bar .arrow-drop-down-6 {
     position: absolute;
     width: 42px;
     height: 42px;
@@ -996,7 +804,7 @@
     left: 41px;
   }
   
-  .list-of-products .text-wrapper-32 {
+  .side-bar .text-wrapper-32 {
     position: absolute;
     width: 123px;
     top: 0;
@@ -1009,7 +817,7 @@
     line-height: normal;
   }
   
-  .list-of-products .slider {
+  .side-bar .slider {
     display: flex;
     width: 166px;
     height: 22px;
@@ -1021,7 +829,7 @@
     left: 0;
   }
   
-  .list-of-products .track {
+  .side-bar .track {
     position: relative;
     flex: 1;
     flex-grow: 1;
@@ -1032,7 +840,7 @@
     border-radius: 100px;
   }
   
-  .list-of-products .knob {
+  .side-bar .knob {
     position: relative;
     width: 28px;
     height: 28px;
@@ -1043,7 +851,7 @@
     box-shadow: 0px 6px 13px #0000001f, 0px 0.5px 4px #0000001f;
   }
   
-  .list-of-products .separator {
+  .side-bar .separator {
     position: absolute;
     width: 150px;
     height: 1px;
@@ -1067,7 +875,7 @@
     left: 145px;
   }
   
-  .list-of-products .check-box-outline-5 {
+  .side-bar .check-box-outline-5 {
     top: 589px;
     position: absolute;
     width: 21px;
@@ -1075,15 +883,15 @@
     left: 60px;
   }
   
-  .list-of-products .check-box-outline-6 {
-    top: 717px;
+  .side-bar .check-box-outline-6 {
+    top: 621px;
     position: absolute;
     width: 21px;
     height: 21px;
     left: 60px;
   }
   
-  .list-of-products .check-indeterminate {
+  .side-bar .check-indeterminate {
     position: absolute;
     width: 19px;
     height: 19px;
@@ -1115,7 +923,7 @@
     left: 4506px;
   }
   
-  .list-of-products .text-wrapper-33 {
+  .side-bar .text-wrapper-33 {
     position: absolute;
     width: 93px;
     top: -2672px;
@@ -1128,7 +936,7 @@
     line-height: normal;
   }
   
-  .list-of-products .arrow-drop-down-7 {
+  .side-bar .arrow-drop-down-7 {
     position: absolute;
     width: 42px;
     height: 42px;

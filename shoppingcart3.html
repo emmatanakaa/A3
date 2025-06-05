@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals3.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="stylesheet" href="stylesearch.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <style>
+      .search-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+
+      .box {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 1440px;
+        height: 528px;
+        z-index: 1000;
+      }
+
+      .dropdown-popup {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 335px;
+        width: 200px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+      }
+
+      .dropdown-item {
+        padding: 12px 16px;
+        font-family: "Montserrat-Regular", Helvetica;
+        font-size: 16px;
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .dropdown-item:hover {
+        background-color: #F1ECDB;
+      }
+
+      .text-wrapper-8:hover {
+        color: #F1ECDB;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Shop dropdown -->
+    <div class="box" id="dropdownPopup">
+      <div class="group">
+        <div class="overlap-group">
+          <div class="text-wrapper">Sympathy</div>
+          <div class="div">Congratulations</div>
+          <div class="text-wrapper-2">Seasons Best</div>
+          <div class="text-wrapper-3">Potted Plants</div>
+          <div class="text-wrapper-4">Specials</div>
+          <div class="text-wrapper-5">Natives</div>
+          <div class="text-wrapper-6">By Flowers</div>
+          <div class="text-wrapper-7">Roses</div>
+          <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
+          <div class="text-wrapper-9">Arrangements</div>
+          <div class="text-wrapper-10">Corporate</div>
+          <div class="text-wrapper-11">Anniversary</div>
+          <div class="text-wrapper-12">New Baby</div>
+          <div class="text-wrapper-13">Valentine's Day</div>
+          <div class="text-wrapper-14">Mother's Day</div>
+          <div class="text-wrapper-15">Birthday</div>
+          <div class="text-wrapper-16">Romance</div>
+          <div class="text-wrapper-17">Thank You</div>
+          <div class="text-wrapper-18">Get Well</div>
+          <div class="text-wrapper-19">Shop our collection</div>
+          <div class="text-wrapper-20">By Ocassion</div>
+          <img class="line" src="img/line-23.svg" />
+          <img class="img" src="img/line-24.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Search popup overlay -->
+    <div class="overlay" id="overlay"></div>
+    <div class="search-popup" id="searchPopup">
+      <div class="box">
+        <div class="group">
+          <div class="overlap-group">
+            <div class="text-wrapper">Bouquets</div>
+            <img class="line" src="Assets/Line 21.svg" />
+            <a href="searchresults.html">
+              <img class="search" src="Assets/search white.svg" />
+            </a>
+            <img class="close" src="Assets/close.svg" onclick="closeSearchPopup()" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopping-cart-page">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="div">
+              <div class="group">
+                <div class="group-wrapper">
+                  <div class="line-wrapper"><img class="line" src="img/line-3.svg" /></div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="group-2">
+                  <div class="group-3">
+                    <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
+                    <a href="shoppingcartpage.html">
+                      <img class="shopping-cart" src="Assets/Shopping cart.svg" />
+                    </a>
+                    <img class="user" src="Assets/User.svg" />
+                    <div class="text-wrapper">About</div>
+                    <div class="text-wrapper-2">Delivery</div>
+                    <div class="text-wrapper-3">Contact</div>
+                    <a href="index.html"></a>
+                      <div class="text-wrapper-4">Home</div>
+                    </a>
+                    <div class="text-wrapper-5">Shop</div>
+                    <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" onclick="toggleDropdown()" />
+                    <img class="element-eaeb" src="Assets/logo-black.png" />
+                  </div>
+                </div>
+              </div>
+              <img class="header-line" src="Assets/Line 6.svg" alt="Header line" />
+              <a href="productpage.html">
+                <div class="text-wrapper-6">Opulent</div>
+              </a>
+              <div class="text-wrapper-7">Size: Standard</div>
+              <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
+              <img class="img" src="img/line-4.svg" />
+              <img class="line-2" src="img/line-6.svg" />
+              <div class="text-wrapper-10">PRODUCT</div>
+              <div class="text-wrapper-13">PRICE</div>
+              <div class="text-wrapper-14">QUANTITY</div>
+              <img class="section1-line" src="Assets/Line 5.svg" alt="Section1 line" />
+              <div class="rectangle"></div>
+              <div class="text-wrapper-11">$138.00</div>
+                <img class="wmmmewl" src="Assets/Flowers/Opulent.png" />
+              <div class="text-wrapper-12">Order Summary</div>
+              <img class="section2-line" src="Assets/Line 5.svg" alt="Section2 line" />
+              <img class="section3-line" src="Assets/Line 5.svg" alt="Section3 line" />
+            </div>
+            <div class="text-wrapper-13">PRICE</div>
+            <div class="text-wrapper-14">QUANTITY</div>
+            <div class="overlap-2">
+              <img class="rectangle-2" src="Assets/Rectangle 9.svg" />
+              <div class="text-wrapper-15">1</div>
+              <img class="add" src="Assets/add.svg" />
+              <img class="check-indeterminate" src="Assets/check_indeterminate_small copy.svg" />
+            </div>
+            <div class="overlap-3">
+              <div class="rectangle-3"></div>
+              <a href="deliverydetailspage.html">
+                <div class="rectangle-4"></div>
+                <div class="text-wrapper-16">Checkout</div>
+              </a>
+              <img class="rectangle-5" src="Assets/Rectangle 44.svg" />
+              <img class="rectangle-6" src="Assets/Rectangle 45.svg" />
+              <div class="text-wrapper-17">Sub Total (tax inc.)</div>
+              <div class="text-wrapper-18">Discount code</div>
+              <div class="text-wrapper-19">Apply</div>
+              <div class="text-wrapper-20">$224.40</div>
+              <div class="text-wrapper-21">$15.00</div>
+              <div class="text-wrapper-22">$239.40</div>
+              <div class="text-wrapper-23">$0.00</div>
+              <div class="text-wrapper-24">Discount</div>
+              <div class="text-wrapper-25">Delivery Fee</div>
+              <img class="total-line" src="Assets/Line 8.svg" alt="Total line" />
+              <div class="text-wrapper-26">Total</div>
+              <img class="line-3" src="img/line-8.svg" />
+            </div>
+            <img class="delete" src="Assets/delete.svg" />
+            <img class="favorite" src="Assets/favorite.svg" />
+            <div class="text-wrapper-27">Delivery</div>
+            <div class="text-wrapper-28">Payment</div>
+            <div class="text-wrapper-29">Confirmation</div>
+            <div class="text-wrapper-30">Your Shopping Cart</div>
+          </div>
+          <div class="overlap-4">
+            <div class="overlap-5">
+              <div class="text-wrapper-31">Evie</div>
+              <div class="text-wrapper-32">Bouquets</div>
+              <div class="text-wrapper-33">$66.00</div>
+            </div>
+            <div class="overlap-6">
+              <div class="text-wrapper-34">Size: Standard</div>
+              <div class="text-wrapper-35">Wrapped</div>
+            </div>
+          </div>
+          <img class="line-4" src="img/line-5.svg" />
+          <img class="line-5" src="img/line-7.svg" />
+          <div class="overlap-7">
+            <div class="rectangle-7"></div>
+            <img class="uxksswrf" src="Assets/Flowers/Evie.png" />
+          </div>
+          <div class="overlap-8">
+            <img class="rectangle2x" src="Assets/Rectangle 9.svg" />
+            <div class="text-wrapper-15">1</div>
+            <img class="add" src="Assets/add.svg" />
+            <img class="check-indeterminate" src="Assets/check_indeterminate_small copy.svg" />
+          </div>
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group-2">
+              <a href="listofproducts.html">
+              <div class="rectangle-8"></div>
+              <div class="text-wrapper-36">Continue shopping</div>
+              </a>
+              </div>
+            </div>
+          </div>
+          <img class="delete-2" src="Assets/delete.svg" />
+          <img class="favorite-2" src="Assets/favorite.svg" />
+        </div>
+      </div>
+    </div>
+    <script>
+      function openSearchPopup() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('searchPopup').style.display = 'block';
+      }
+
+      function closeSearchPopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('searchPopup').style.display = 'none';
+      }
+
+      function toggleDropdown() {
+        const dropdown = document.getElementById('dropdownPopup');
+        if (dropdown.style.display === 'block') {
+          dropdown.style.display = 'none';
+        } else {
+          dropdown.style.display = 'block';
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdownPopup');
+        const arrow = document.querySelector('.arrow-drop-down');
+        if (!dropdown.contains(event.target) && event.target !== arrow) {
+          dropdown.style.display = 'none';
+        }
+      });
+
+      document.getElementById('overlay').addEventListener('click', closeSearchPopup);
+    </script>
+  </body>
+</html>

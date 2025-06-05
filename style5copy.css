@@ -11,7 +11,7 @@
 .nav-content {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,13 +21,35 @@
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.nav-links .text-home,
+.nav-links .text-shop,
+.nav-links .text-about,
+.nav-links .text-delivery,
+.nav-links .text-contact {
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 42px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .nav-icons {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+}
+
+.nav-icons img {
+    width: 45px;
+    height: 45px;
 }
 
 .search-text {
@@ -71,44 +93,66 @@
 }
 
 .element-eaeb {
-    width: clamp(60px, 8vw, 96px);
+    width: 120px;
     height: auto;
 }
 
 .header-line {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     height: auto;
     margin: 20px auto 0;
     display: block;
 }
 
-@media screen and (max-width: 1368px) {
-    .nav-content {
-        width: 100%;
-        max-width: 1368px;
-        margin: 0 auto;
-    }
-
+@media screen and (max-width: 1400px) {
     .nav-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 10px;
-        gap: 20px;
+        gap: 40px;
+    }
+    
+    .nav-links .text-home,
+    .nav-links .text-shop,
+    .nav-links .text-about,
+    .nav-links .text-delivery,
+    .nav-links .text-contact {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-links {
+        gap: 30px;
+    }
+    
+    .nav-links .text-home,
+    .nav-links .text-shop,
+    .nav-links .text-about,
+    .nav-links .text-delivery,
+    .nav-links .text-contact {
+        font-size: 32px;
     }
 
-    .text-about,
-    .text-delivery,
-    .text-contact,
-    .text-home,
-    .text-shop {
-        white-space: nowrap;
+    .element-eaeb {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-links {
+        gap: 25px;
+    }
+    
+    .nav-links .text-home,
+    .nav-links .text-shop,
+    .nav-links .text-about,
+    .nav-links .text-delivery,
+    .nav-links .text-contact {
+        font-size: 28px;
     }
 
-    .header-line {
-        width: 100%;
-        max-width: 1328px;
+    .nav-icons img {
+        width: 35px;
+        height: 35px;
     }
 }
 

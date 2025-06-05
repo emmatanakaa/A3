@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide2.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="stylesearch.css" />
+    <style>
+      .search-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the popup and overlay HTML -->
+    <div class="overlay" id="overlay"></div>
+    <div class="search-popup" id="searchPopup">
+      <div class="box">
+        <div class="group">
+          <div class="overlap-group">
+            <div class="text-wrapper">Bouquets</div>
+            <img class="line" src="Assets/Line 21.svg" />
+            <a href="searchresults.html">
+              <img class="search" src="Assets/search white.svg" />
+            </a>
+            <img class="close" src="Assets/close.svg" onclick="closeSearchPopup()" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-of-products">
+      <div class="side-bar">
+        <div class="text-wrapper-28">Bouquets</div>
+
+        <div class="text-wrapper-29">Sort by</div>
+        <div class="overlap-5">
+          <div class="text-wrapper-30">Default</div>
+          <img class="arrow-drop-down-5" src="Assets/arrow_drop_down.svg" />
+          <img class="default-box" src="Assets/Rectangle 118.svg" alt="Default box" />
+        </div>
+
+        <div class="overlap-group-2">
+          <div class="text-wrapper-31">Filters</div>
+          <img class="arrow-drop-down-6" src="Assets/arrow_drop_down.svg" />
+        </div>
+
+        <div class="overlap-6">
+          <div class="text-wrapper-32">Price</div>
+          <div class="slider">
+            <div class="track"><div class="knob"></div></div>
+            <div class="separator"></div>
+          </div>
+          <img class="rectangle-10" src="Assets/Rectangle 143.svg" />
+          <img class="check-indeterminate" src="Assets/check_indeterminate_small.svg" />
+          <img class="rectangle-11" src="Assets/Rectangle 143.svg" />
+        </div>
+      
+        <div class="text-wrapper-13">Size</div>
+        <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
+        <div class="text-wrapper-9">Standard</div>
+        <img class="check-box-outline" src="Assets/check_box_outline_blank.svg" />
+        <div class="text-wrapper-10">Premium</div>
+        <img class="check-box-outline-5" src="Assets/check_box_outline_blank.svg" />
+
+        <div class="text-wrapper-14">Presentation</div>
+        <img class="arrow-drop-down-2" src="Assets/arrow_drop_down.svg" />
+        <div class="text-wrapper-8">Wrapped</div>
+        <img class="check-box-outline-2" src="Assets/check_box_outline_blank.svg" />
+        <div class="text-wrapper-11">In vase</div>
+        <img class="check-box-outline-6" src="Assets/check_box_outline_blank.svg" />
+
+        <div class="text-wrapper-15">Availability</div>
+        <img class="arrow-drop-down-3" src="Assets/arrow_drop_down.svg" />
+        <div class="text-wrapper-7">In stock</div>
+        <img class="check-box-outline-3" src="Assets/check_box_outline_blank.svg" />
+        <div class="text-wrapper-12">Out of stock</div>
+        <img class="check-box-outline-4" src="Assets/check_box_outline_blank.svg" />
+
+        <img class="vertical-divider" src="Assets/Divider.svg" alt="Vertical divider" />
+      </div>
+
+      <div class="flower-gallery">
+        <img class="evie" src="Assets/Flowers2/Evie.png" alt="Evie Flower Arrangement" />
+        <img class="joni" src="Assets/Flowers2/Joni.png" alt="Joni Flower Arrangement" />
+        <img class="daily-surprise" src="Assets/Flowers2/Daily Surprise.png" alt="Daily Surprise Flower Arrangement" />
+        <img class="opulent" src="Assets/Flowers2/Opulent.png" alt="Opulent Flower Arrangement" />
+        <img class="alexa" src="Assets/Flowers2/Alexa.png" alt="Alexa Flower Arrangement" />
+        <img class="jewel" src="Assets/Flowers2/Jewel.png" alt="Jewel Flower Arrangement" />
+      </div>
+    </div>
+
+    <script>
+      function openSearchPopup() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('searchPopup').style.display = 'block';
+      }
+
+      function closeSearchPopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('searchPopup').style.display = 'none';
+      }
+
+      // Close popup when clicking outside
+      document.getElementById('overlay').addEventListener('click', closeSearchPopup);
+    </script>
+  </body>
+</html>

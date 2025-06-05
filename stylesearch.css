@@ -35,7 +35,7 @@
 
 .box .line {
   position: absolute;
-  width: 1216px;
+  width: 80%;
   height: 3px;
   top: 108px;
   left: 112px;
@@ -47,7 +47,7 @@
   width: 49px;
   height: 50px;
   top: 47px;
-  left: 1273px;
+  left: 1218px;
 }
 
 .box .close {
@@ -55,5 +55,81 @@
   width: 49px;
   height: 49px;
   top: 47px;
-  left: 1211px;
+  left: 1150px;
+}
+
+.search-text {
+    position: absolute;
+    width: 174px;
+    left: 13%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    margin-top: -20px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 390px) {
+  .box {
+    width: 100%;
+    height: 100px;
+  }
+
+  .box .group {
+    width: 100%;
+    height: 100px;
+  }
+
+  .box .overlap-group {
+    width: 100%;
+    height: 100px;
+  }
+
+  .box .text-wrapper {
+    width: auto;
+    top: 40px;
+    left: 20px;
+    font-size: 24px;
+  }
+
+  .box .line {
+    width: 80%;
+    height: 2px;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .box .search {
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    right: 40px;
+    left: auto;
+  }
+
+  .box .close {
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    right: 80px;
+    left: auto;
+  }
+
+  .search-text {
+    width: auto;
+    left: 40px;
+    top: 40px;
+    transform: none;
+    margin-top: 0;
+    font-size: 24px;
+    position: absolute;
+  }
 }

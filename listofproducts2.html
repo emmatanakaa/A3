@@ -26,6 +26,45 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
+
+    }
+    .box {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 1440px;
+        height: 528px;
+        z-index: 1000;
+      }
+
+      .dropdown-popup {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 335px;
+        width: 200px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+      }
+
+      .dropdown-item {
+        padding: 12px 16px;
+        font-family: "Montserrat-Regular", Helvetica;
+        font-size: 16px;
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .dropdown-item:hover {
+        background-color: #F1ECDB;
+      }
+
+      .text-wrapper-8:hover {
+        color: #F1ECDB;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -46,6 +85,36 @@
         </div>
       </div>
     </div>
+
+    <div class="box" id="dropdownPopup">
+        <div class="group">
+          <div class="overlap-group">
+            <div class="text-wrapper">Sympathy</div>
+            <div class="div">Congratulations</div>
+            <div class="text-wrapper-2">Seasons Best</div>
+            <div class="text-wrapper-3">Potted Plants</div>
+            <div class="text-wrapper-4">Specials</div>
+            <div class="text-wrapper-5">Natives</div>
+            <div class="text-wrapper-6">By Flowers</div>
+            <div class="text-wrapper-7">Roses</div>
+            <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
+            <div class="text-wrapper-9">Arrangements</div>
+            <div class="text-wrapper-10">Corporate</div>
+            <div class="text-wrapper-11">Anniversary</div>
+            <div class="text-wrapper-12">New Baby</div>
+            <div class="text-wrapper-13">Valentine's Day</div>
+            <div class="text-wrapper-14">Mother's Day</div>
+            <div class="text-wrapper-15">Birthday</div>
+            <div class="text-wrapper-16">Romance</div>
+            <div class="text-wrapper-17">Thank You</div>
+            <div class="text-wrapper-18">Get Well</div>
+            <div class="text-wrapper-19">Shop our collection</div>
+            <div class="text-wrapper-20">By Ocassion</div>
+            <img class="line" src="img/line-23.svg" />
+            <img class="img" src="img/line-24.svg" />
+          </div>
+        </div>
+      </div>
 
     <div class="flower-gallery"> <div class="jewel">
         <div class="rectangle-3"></div>
@@ -91,14 +160,11 @@
         <img class="element-idgljuk" src="Assets/Flowers/Daily Surprise.png" alt="Daily Surprise Flower Arrangement" />
       </div>
     </div>
- 
-    <div class="list-of-products">
     
     <div class="side-bar">
               <div class="text-wrapper-28">Bouquets</div>
 
               <div class="text-wrapper-29">Sort by</div>
-
               <div class="text-wrapper-30">Default</div>
               <img class="arrow-drop-down-5" src="Assets/arrow_drop_down.svg" />
               <img class="default-box" src="Assets/Rectangle 118.svg" alt="Default box" />
@@ -110,6 +176,7 @@
               <div class="slider">
                 <div class="track"><div class="knob"></div></div>
                 <div class="separator"></div>
+            <img class="check-indeterminate" src="Assets/check_indeterminate_small.svg" />
 
             <div class="text-wrapper-13">Size</div>
             <div class="text-wrapper-9">Standard</div>
@@ -128,65 +195,46 @@
             <img class="check-box-outline-5" src="Assets/check_box_outline_blank.svg" />
             <div class="text-wrapper-12">Out of stock</div>
             <img class="check-box-outline-6" src="Assets/check_box_outline_blank.svg" />
-        </div>
 
-            <img class="header-line" src="Assets/Header Line.svg" alt="Header line" />
+            <img class="check-box-outline-3" src="Assets/check_box_outline_blank.svg" />
+            <img class="check-box-outline-4" src="Assets/check_box_outline_blank.svg" />
+            <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
+            <img class="arrow-drop-down-2" src="Assets/arrow_drop_down.svg" />
+            <img class="arrow-drop-down-3" src="Assets/arrow_drop_down.svg" />
 
-            <img class="check-indeterminate" src="Assets/check_indeterminate_small.svg" />
-              <img class="check-box-outline-3" src="Assets/check_box_outline_blank.svg" />
-              <img class="check-box-outline-4" src="Assets/check_box_outline_blank.svg" />
-              <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
-              <img class="arrow-drop-down-2" src="Assets/arrow_drop_down.svg" />
-              <img class="arrow-drop-down-3" src="Assets/arrow_drop_down.svg" />
- 
-              <div class="div-wrapper">
-                <div class="group-2">
-                  <div class="group-3">
-                    <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
-                    <a href="shoppingcartpage.html">
-                      <img class="shopping-cart" src="Assets/Shopping cart.svg" />
-                    </a>
-                    <img class="user" src="Assets/User.svg" />
-                    <div class="text-wrapper-23">About</div>
-                    <div class="text-wrapper-24">Delivery</div>
-                    <div class="text-wrapper-25">Contact</div>
-                    <a href="index.html">
-                      <div class="text-wrapper-26">Home</div>
-                    </a>
-                    <div class="text-wrapper-27">Shop</div>
-                    <img class="arrow-drop-down-4" src="Assets/arrow_drop_down.svg" />
-                    <img class="element-eaeb" src="Assets/logo-black.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="overlap-group-2">
-            </div>
             <img class="vertical-divider" src="Assets/Divider.svg" alt="Vertical divider" />
-          <img class="search-2" src="img/search.png" />
-          <img class="user-2" src="img/user.png" />
-            <img class="shopping-cart-2" src="img/shopping-cart.png" />
-          <div class="text-wrapper-33">Shop</div>
-          <img class="arrow-drop-down-7" src="img/arrow-drop-down.png" />
-          <div class="text-wrapper-34">About</div>
-          <div class="text-wrapper-35">Contact</div>
-        </div>
-      </div>
-      <script>
-        function openSearchPopup() {
-          document.getElementById('overlay').style.display = 'block';
-          document.getElementById('searchPopup').style.display = 'block';
-        }
-  
-        function closeSearchPopup() {
-          document.getElementById('overlay').style.display = 'none';
-          document.getElementById('searchPopup').style.display = 'none';
-        }
-  
-        // Close popup when clicking outside
-        document.getElementById('overlay').addEventListener('click', closeSearchPopup);
-      </script>
-    </body>
-  </html>
-     
+
+
+            <script>
+                function openSearchPopup() {
+                  document.getElementById('overlay').style.display = 'block';
+                  document.getElementById('searchPopup').style.display = 'block';
+                }
+          
+                function closeSearchPopup() {
+                  document.getElementById('overlay').style.display = 'none';
+                  document.getElementById('searchPopup').style.display = 'none';
+                }
+          
+                function toggleDropdown() {
+                  const dropdown = document.getElementById('dropdownPopup');
+                  if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                  } else {
+                    dropdown.style.display = 'block';
+                  }
+                }
+          
+                // Close popup when clicking outside
+                document.addEventListener('click', function(event) {
+                  const dropdown = document.getElementById('dropdownPopup');
+                  const arrow = document.querySelector('.arrow-drop-down');
+                  if (!dropdown.contains(event.target) && event.target !== arrow) {
+                    dropdown.style.display = 'none';
+                  }
+                });
+          
+                document.getElementById('overlay').addEventListener('click', closeSearchPopup);
+              </script>
+            </body>
+          </html>
