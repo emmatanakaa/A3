@@ -1,3 +1,191 @@
+body {
+    background-color: #FFFAEA;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.navigation {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #FFFAEA;
+    backdrop-filter: blur(5px);
+}
+
+.nav-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.nav-links .text-home,
+.nav-links .text-shop,
+.nav-links .text-about,
+.nav-links .text-delivery,
+.nav-links .text-contact {
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 42px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-icons img {
+    width: 45px;
+    height: 45px;
+}
+
+.search-text {
+    position: absolute;
+    width: 174px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -20px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Navigation text styles */
+.text-wrapper-5,
+.text-wrapper-6,
+.text-wrapper-7,
+.text-wrapper-8,
+.text-wrapper-9 {
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: clamp(16px, 2vw, 32px);
+    white-space: nowrap;
+}
+
+/* Icons */
+.search,
+.shopping-cart,
+.user,
+.arrow-drop-down {
+    width: clamp(25px, 3vw, 45px);
+    height: auto;
+    cursor: pointer;
+}
+
+.element-eaeb {
+    width: 120px;
+    height: auto;
+}
+
+.header-line {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+@media screen and (max-width: 1400px) {
+    .nav-links {
+        gap: 40px;
+    }
+    
+    .nav-links .text-home,
+    .nav-links .text-shop,
+    .nav-links .text-about,
+    .nav-links .text-delivery,
+    .nav-links .text-contact {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-links {
+        gap: 30px;
+    }
+    
+    .nav-links .text-home,
+    .nav-links .text-shop,
+    .nav-links .text-about,
+    .nav-links .text-delivery,
+    .nav-links .text-contact {
+        font-size: 32px;
+    }
+
+    .element-eaeb {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-links {
+        gap: 25px;
+    }
+    
+    .nav-links .text-home,
+    .nav-links .text-shop,
+    .nav-links .text-about,
+    .nav-links .text-delivery,
+    .nav-links .text-contact {
+        font-size: 28px;
+    }
+
+    .nav-icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-line {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-line {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navigation {
+        padding: 8px 0;
+        background-color: #FFFAEA;
+        backdrop-filter: blur(5px);
+    }
+}
+
 .delivery-details {
     background-color: #fffaea;
     display: flex;
@@ -5,7 +193,7 @@
     justify-content: center;
     width: 100%;
   }
-  
+
   .delivery-details .div {
     background-color: var(--variable-collection-color-3);
     width: 1440px;
@@ -141,8 +329,8 @@
     left: 0;
     object-fit: cover;
   }
-  
-  .delivery-details .overlap {
+
+  .order-summary {
     position: absolute;
     width: 360px;
     height: 461px;
@@ -154,7 +342,7 @@
     border-color: #000000;
   }
   
-  .delivery-details .overlap-group {
+  .order-summary .overlap-group {
     position: absolute;
     width: 309px;
     height: 30px;
@@ -162,7 +350,7 @@
     left: 33px;
   }
   
-  .delivery-details .overlap-2 {
+  .order-summary .overlap-2 {
     position: absolute;
     width: 289px;
     height: 30px;
@@ -170,7 +358,7 @@
     left: 0;
   }
   
-  .delivery-details .text-wrapper-6 {
+  .order-summary .text-order {
     position: absolute;
     width: 169px;
     top: 0;
@@ -192,7 +380,7 @@
     object-fit: cover;
   }
   
-  .delivery-details .text-wrapper-7 {
+  .order-summary .text-items {
     position: absolute;
     width: 68px;
     top: 5px;
@@ -205,7 +393,7 @@
     line-height: normal;
   }
   
-  .delivery-details .img {
+  .order-summary .img {
     position: absolute;
     width: 290px;
     height: 1px;
@@ -214,7 +402,7 @@
     object-fit: cover;
   }
   
-  .delivery-details .overlap-group-wrapper {
+  .order-summary .overlap-group-wrapper {
     position: absolute;
     width: 81px;
     height: 81px;
@@ -222,12 +410,12 @@
     left: 31px;
   }
   
-  .delivery-details .overlap-group-2 {
+  .order-summary .overlap-group-2 {
     position: relative;
     height: 81px;
   }
   
-  .delivery-details .rectangle {
+  .order-summary .rectangle {
     width: 59px;
     height: 56px;
     top: 13px;
@@ -238,7 +426,7 @@
     border-radius: 2px;
   }
   
-  .delivery-details .wmmmewl {
+  .order-summary .wmmmewl {
     position: absolute;
     width: 65px;
     height: 65px;
@@ -247,7 +435,7 @@
     object-fit: cover;
   }
   
-  .delivery-details .overlap-wrapper {
+  .order-summary .overlap-wrapper {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -255,12 +443,12 @@
     left: 31px;
   }
   
-  .delivery-details .overlap-3 {
+  .order-summary .overlap-3 {
     position: relative;
     height: 80px;
   }
   
-  .delivery-details .rectangle-2 {
+  .order-summary .rectangle-2 {
     width: 58px;
     height: 55px;
     top: 12px;
@@ -271,7 +459,7 @@
     border-radius: 2px;
   }
   
-  .delivery-details .uxksswrf {
+  .order-summary .uxksswrf {
     position: absolute;
     width: 53px;
     height: 53px;
@@ -280,7 +468,7 @@
     object-fit: cover;
   }
   
-  .delivery-details .overlap-4 {
+  .order-summary .overlap-4 {
     position: absolute;
     width: 171px;
     height: 80px;
@@ -288,7 +476,7 @@
     left: 35px;
   }
   
-  .delivery-details .text-wrapper-8 {
+  .order-summary .text-total {
     position: absolute;
     width: 169px;
     top: 0;
@@ -301,7 +489,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-9 {
+  .order-summary .text-discount {
     position: absolute;
     width: 169px;
     top: 25px;
@@ -314,7 +502,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-10 {
+  .order-summary .text-fee {
     width: 169px;
     top: 50px;
     left: 0;
@@ -327,7 +515,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-11 {
+  .order-summary .text-wrapper-11 {
     position: absolute;
     width: 73px;
     top: 300px;
@@ -341,7 +529,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-12 {
+  .order-summary .text-wrapper-12 {
     width: 73px;
     top: 350px;
     left: 247px;
@@ -355,7 +543,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-13 {
+  .order-summary .text-wrapper-13 {
     width: 73px;
     top: 395px;
     left: 246px;
@@ -369,7 +557,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-14 {
+  .order-summary .text-wrapper-14 {
     width: 73px;
     top: 325px;
     left: 244px;
@@ -383,7 +571,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-15 {
+  .order-summary .text-wrapper-15 {
     position: absolute;
     width: 169px;
     top: 395px;
@@ -405,7 +593,7 @@
     object-fit: cover;
   }
   
-  .delivery-details .overlap-5 {
+  .order-summary .overlap-5 {
     position: absolute;
     width: 200px;
     height: 55px;
@@ -413,7 +601,7 @@
     left: 122px;
   }
   
-  .delivery-details .text-wrapper-16 {
+  .order-summary .text-wrapper-16 {
     position: absolute;
     width: 152px;
     top: 0;
@@ -426,7 +614,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-17 {
+  .order-summary .text-wrapper-17 {
     position: absolute;
     width: 93px;
     top: 34px;
@@ -440,7 +628,7 @@
     white-space: nowrap;
   }
   
-  .delivery-details .text-wrapper-18 {
+  .order-summary .text-wrapper-18 {
     position: absolute;
     width: 93px;
     top: 44px;
@@ -454,7 +642,7 @@
     white-space: nowrap;
   }
   
-  .delivery-details .text-wrapper-19 {
+  .order-summary .text-wrapper-19 {
     position: absolute;
     width: 93px;
     top: 18px;
@@ -467,7 +655,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-20 {
+  .order-summary .text-wrapper-20 {
     top: 14px;
     left: 144px;
     font-family: "Montserrat-Regular", Helvetica;
@@ -480,7 +668,7 @@
     line-height: normal;
   }
   
-  .delivery-details .overlap-6 {
+  .order-summary .overlap-6 {
     position: absolute;
     width: 203px;
     height: 55px;
@@ -488,7 +676,7 @@
     left: 122px;
   }
   
-  .delivery-details .div-wrapper {
+  .order-summary .div-wrapper {
     position: absolute;
     width: 160px;
     height: 55px;
@@ -496,13 +684,13 @@
     left: 0;
   }
   
-  .delivery-details .overlap-7 {
+  .order-summary .overlap-7 {
     position: relative;
     width: 152px;
     height: 55px;
   }
   
-  .delivery-details .text-wrapper-21 {
+  .order-summary .text-wrapper-21 {
     top: 21px;
     left: 152px;
     font-family: "Montserrat-Regular", Helvetica;
@@ -540,8 +728,16 @@
     top: -2px;
     left: 0;
   }
+
+  .progress-bar {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 5px;
+    left: 50px;
+  }
   
-  .delivery-details .text-wrapper-22 {
+  .progress-bar .text-wrapper-22 {
     position: absolute;
     width: 276px;
     top: 254px;
@@ -554,7 +750,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-23 {
+  .progress-bar .text-wrapper-23 {
     position: absolute;
     width: 155px;
     top: 254px;
@@ -567,7 +763,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-24 {
+  .progress-bar .text-wrapper-24 {
     width: 143px;
     top: 256px;
     left: 547px;
@@ -580,7 +776,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-25 {
+  .progress-bar .text-wrapper-25 {
     position: absolute;
     width: 224px;
     top: 256px;
@@ -593,7 +789,7 @@
     line-height: normal;
   }
   
-  .delivery-details .email-address {
+  .form .email-address {
     position: absolute;
     width: 169px;
     top: 318px;
@@ -606,19 +802,152 @@
     line-height: normal;
   }
   
-  .delivery-details .span {
+  .form {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 0px;
+    left: 0;
+  }
+
+  .form .span {
     color: #000000;
   }
+
+  .form .rectangle-4 {
+    width: 397px;
+    height: 40px;
+    top: 709px;
+    left: 139px;
+    background-color: #d9d9d999;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+  .form .rectangle-5 {
+    width: 730px;
+    height: 40px;
+    top: 349px;
+    left: 140px;
+    background-color: #d9d9d999;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+  .form .rectangle-6 {
+    width: 730px;
+    height: 40px;
+    top: 525px;
+    left: 139px;
+    background-color: #d9d9d999;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+  .form .rectangle-7 {
+    width: 334px;
+    height: 40px;
+    top: 619px;
+    left: 139px;
+    background-color: #d9d9d999;
+    position: absolute;
+    border-radius: 2px;
+  }
   
-  .delivery-details .text-wrapper-26 {
+  .form .rectangle-8 {
+    width: 334px;
+    height: 40px;
+    top: 438px;
+    left: 140px;
+    background-color: #d9d9d999;
+    position: absolute;
+    border-radius: 2px;
+  }
+  
+  .form .rectangle-9 {
+    width: 330px;
+    height: 40px;
+    top: 618px;
+    left: 537px;
+    background-color: #d9d9d999;
+    position: absolute;
+    border-radius: 2px;
+  }
+  
+  .form .text-wrapper-26 {
     color: #650000;
   }
   
-  .delivery-details .first-name {
+  .form .first-name {
     position: absolute;
     width: 169px;
     top: 408px;
     left: 140px;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .form .last-name {
+    position: absolute;
+    width: 169px;
+    top: 410px;
+    left: 140px;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .form .street-address {
+    position: absolute;
+    width: 169px;
+    top: 495px;
+    left: 139px;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .form .postcode {
+    position: absolute;
+    width: 169px;
+    top: 588px;
+    left: 538px;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .form .phone {
+    position: absolute;
+    width: 169px;
+    top: 678px;
+    left: 139px;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: transparent;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .form .city {
+    position: absolute;
+    width: 169px;
+    top: 588px;
+    left: 139px;
     font-family: "Montserrat-SemiBold", Helvetica;
     font-weight: 600;
     color: transparent;
@@ -639,19 +968,6 @@
     left: 537px;
   }
   
-  .delivery-details .last-name {
-    position: absolute;
-    width: 169px;
-    top: 0;
-    left: 0;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: transparent;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
   .delivery-details .rectangle-3 {
     width: 332px;
     height: 40px;
@@ -662,46 +978,7 @@
     border-radius: 2px;
   }
   
-  .delivery-details .street-address {
-    position: absolute;
-    width: 169px;
-    top: 495px;
-    left: 139px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: transparent;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .delivery-details .postcode {
-    position: absolute;
-    width: 169px;
-    top: 588px;
-    left: 538px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: transparent;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .delivery-details .phone {
-    position: absolute;
-    width: 169px;
-    top: 678px;
-    left: 139px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: transparent;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .delivery-details .overlap-9 {
+  .tickboxes {
     position: absolute;
     width: 531px;
     height: 59px;
@@ -709,7 +986,7 @@
     left: 164px;
   }
   
-  .delivery-details .p {
+  .tickboxes .p {
     position: absolute;
     width: 445px;
     top: 0;
@@ -722,7 +999,7 @@
     line-height: normal;
   }
   
-  .delivery-details .text-wrapper-28 {
+  .tickboxes .text-wrapper-28 {
     position: absolute;
     width: 531px;
     top: 29px;
@@ -735,106 +1012,50 @@
     line-height: normal;
   }
   
-  .delivery-details .check-box-outline {
+  .tickboxes .check-box-outline {
     position: absolute;
     width: 15px;
     height: 15px;
-    top: 769px;
-    left: 141px;
+    top: 29px;
+    left: -25px;
   }
   
-  .delivery-details .check-box-outline-2 {
+  .tickboxes .check-box-outline-2 {
     position: absolute;
     width: 15px;
     height: 15px;
-    top: 798px;
-    left: 141px;
+    top: 0px;
+    left: -25px;
   }
   
-  .delivery-details .rectangle-4 {
-    width: 397px;
-    height: 40px;
-    top: 709px;
-    left: 139px;
-    background-color: #d9d9d999;
-    position: absolute;
-    border-radius: 2px;
-  }
-  
-  .delivery-details .rectangle-5 {
-    width: 730px;
-    height: 40px;
-    top: 349px;
-    left: 140px;
-    background-color: #d9d9d999;
-    position: absolute;
-    border-radius: 2px;
-  }
-  
-  .delivery-details .rectangle-6 {
-    width: 730px;
-    height: 40px;
-    top: 525px;
-    left: 139px;
-    background-color: #d9d9d999;
-    position: absolute;
-    border-radius: 2px;
-  }
-  
-  .delivery-details .city {
-    position: absolute;
-    width: 169px;
-    top: 588px;
-    left: 139px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: transparent;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .delivery-details .rectangle-7 {
-    width: 334px;
-    height: 40px;
-    top: 619px;
-    left: 139px;
-    background-color: #d9d9d999;
-    position: absolute;
-    border-radius: 2px;
-  }
-  
-  .delivery-details .rectangle-8 {
-    width: 334px;
-    height: 40px;
-    top: 438px;
-    left: 140px;
-    background-color: #d9d9d999;
-    position: absolute;
-    border-radius: 2px;
-  }
-  
-  .delivery-details .rectangle-9 {
-    width: 330px;
-    height: 40px;
-    top: 618px;
-    left: 537px;
-    background-color: #d9d9d999;
-    position: absolute;
-    border-radius: 2px;
-  }
-  
-  .delivery-details .overlap-10 {
+  .continue-button {
     position: absolute;
     width: 230px;
     height: 48px;
     top: 827px;
     left: 140px;
+    z-index: 10;
+}
+
+.continue-button a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 11;
+}
+
+.continue-button .rectangle-10 {
+    position: absolute;
+    width: 230px;
+    height: 48px;
     background-color: #000000;
     border-radius: 2px;
-  }
-  
-  .delivery-details .text-wrapper-29 {
+    z-index: 9;
+}
+
+.continue-button .text-wrapper-29 {
     position: absolute;
     width: 120px;
     top: 11px;
@@ -846,9 +1067,18 @@
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-  }
+    z-index: 12;
+}
   
-  .delivery-details .text-wrapper-30 {
+  .back-to-products {
+    position: absolute;
+    width: 230px;
+    height: 48px;
+    top: -1000px;
+    left: 70px;
+  }
+
+  .back-to-products .text-wrapper-30 {
     position: absolute;
     top: 161px;
     left: 1136px;
@@ -861,7 +1091,7 @@
     white-space: nowrap;
   }
   
-  .delivery-details .text-wrapper-31 {
+  .back-to-products .text-wrapper-31 {
     top: 161px;
     left: 1313px;
     font-family: "Montserrat-Regular", Helvetica;
@@ -874,7 +1104,7 @@
     line-height: normal;
   }
   
-  .delivery-details .arrow-forward {
+  .back-to-products .arrow-forward {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -916,4 +1146,40 @@
     left: 30px;
     object-fit: cover;
   }
-  
+
+  @media screen and (max-width: 768px) {
+    .back-to-products {
+        top: 80px;
+        right: 20px;
+        gap: 10px;
+    }
+
+    .back-to-products .text-wrapper,
+    .back-to-products .text-wrapper-2,
+    .back-to-products .text-wrapper-13 {
+        font-size: 16px;
+    }
+
+    .back-to-products .arrow-forward,
+    .back-to-products .arrow-forward-2 {
+        width: 20px;
+        height: 20px;
+    }
+
+.progress-bar {
+    scale: 1.1;
+    top: 100px;
+}
+
+.form {
+    scale: 1.5;
+    top: 300px;
+    left: 340px;
+}
+
+.order-summary {
+    scale: 2.8;
+    top: 2100px;
+    left: 550px;
+}
+}

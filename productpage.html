@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style3.css" />
     <link rel="stylesheet" href="stylesearch.css" />
+    <link rel="stylesheet" href="shop.css" />
+    
     <style>
+      body {
+        background-color: #FFFAEA;
+        margin: 0;
+        padding: 0;
+      }
+
+      .main-container {
+        background-color: #FFFFFF;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
       .search-popup {
         display: none;
         position: fixed;
@@ -28,16 +44,281 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
       }
+
+      .drop-down-box {
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1440px;
+        height: 528px;
+        z-index: 1000;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      }
+
+      .drop-down-group {
+        width: 100%;
+      }
+
+      .dropdown-popup {
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 335px;
+        width: 200px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+      }
+
+      .dropdown-item {
+        padding: 12px 16px;
+        font-family: "Montserrat-Regular", Helvetica;
+        font-size: 16px;
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .dropdown-item:hover {
+        background-color: #F1ECDB;
+      }
+
+      .text-wrapper-8:hover {
+        color: #F1ECDB;
+        cursor: pointer;
+      }
+
+      .navigation {
+        background-color: #FFFAEA;
+        padding: 20px 0;
+      }
+
+      .nav-content {
+        background-color: #FFFAEA;
+        padding: 0 20px;
+      }
+
+      .nav-links {
+        background-color: #FFFAEA;
+      }
+
+      .nav-icons {
+        background-color: #FFFAEA;
+      }
+
+      .header-line {
+        margin-top: 0;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 390px) {
+        .drop-down-box {
+          top: 120px;
+          width: 100%;
+          height: auto;
+          padding: 15px;
+          left: 0;
+          transform: none;
+        }
+
+        .drop-down-group {
+          width: 100%;
+        }
+
+        .drop-down-overlap-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          padding: 8px;
+        }
+
+        .drop-down-overlap-group div {
+          width: 100%;
+          font-size: 11px;
+          padding: 6px;
+          text-align: center;
+          border-bottom: 1px solid #F1ECDB;
+        }
+
+        .text-wrapper-19,
+        .text-wrapper-20 {
+          font-size: 13px;
+          font-weight: bold;
+          color: #3d1b10;
+          margin-top: 12px;
+          background-color: #F1ECDB;
+          width: 100%;
+          padding: 8px !important;
+        }
+
+        .drop-down-overlap-group .line,
+        .drop-down-overlap-group .img {
+          display: none;
+        }
+
+        .navigation {
+          padding: 8px 0;
+          background-color: #F1ECDB;
+          backdrop-filter: blur(5px);
+        }
+
+        .nav-content {
+          padding: 0 10px;
+          flex-direction: column;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin: 15px 0;
+        }
+
+        .nav-links .arrow-drop-down {
+          width: 10px;
+        }
+
+        .text-wrapper-5,
+        .text-wrapper-6,
+        .text-wrapper-7,
+        .text-wrapper-8,
+        .text-wrapper-9 {
+          font-size: 10px;
+        }
+
+        .nav-icons {
+          margin-top: 10px;
+          gap: 15px;
+        }
+
+        .nav-icons img {
+          width: 25px;
+          height: 18px;
+        }
+
+        .element-eaeb {
+          width: 50px;
+        }
+
+        .header-line {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+
+      /* Responsive styles for Surface Pro 7 */
+      @media screen and (max-width: 1368px) {
+        .home-page {
+          width: 100%;
+          max-width: 1368px;
+          margin: 0 auto;
+        }
+
+        .overlap-group {
+          width: 100%;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+
+        .group-2 {
+          width: 100%;
+          max-width: 1328px;
+          margin: 0 auto;
+        }
+
+        .group-3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 10px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: auto;
+          gap: 20px;
+        }
+
+        .text-wrapper-5,
+        .text-wrapper-6,
+        .text-wrapper-7,
+        .text-wrapper-8,
+        .text-wrapper-9 {
+          white-space: nowrap;
+        }
+
+        .header-line {
+          width: 100%;
+          max-width: 1328px;
+        }
+
+        img.element-eaeb {
+          max-width: 150px;
+          height: auto;
+        }
+
+        .search-popup .box {
+          width: 90%;
+          max-width: 1328px;
+          margin: 0 auto;
+        }
+      }
+
+      /* Additional adjustments for height */
+      @media screen and (max-height: 912px) {
+        .home-page {
+          min-height: 100vh;
+        }
+
+        .overlap-group {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+
     </style>
   </head>
   <body>
+    <!-- Shop dropdown -->
+    <div class="drop-down-box" id="dropdownPopup">
+      <div class="drop-down-group">
+        <div class="drop-down-overlap-group">
+          <div class="text-wrapper-20">By Occasion</div>
+          <div class="text-wrapper">Sympathy</div>
+          <div class="div">Congratulations</div>
+          <div class="text-wrapper-2">Seasons Best</div>
+          <div class="text-wrapper-3">Potted Plants</div>
+          <div class="text-wrapper-4">Specials</div>
+          <div class="text-wrapper-5">Natives</div>
+          <div class="text-wrapper-19">Shop our collection</div>
+          <div class="text-wrapper-6">By Flowers</div>
+          <div class="text-wrapper-7">Roses</div>
+          <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
+          <div class="text-wrapper-9">Arrangements</div>
+          <div class="text-wrapper-10">Corporate</div>
+          <div class="text-wrapper-11">Anniversary</div>
+          <div class="text-wrapper-12">New Baby</div>
+          <div class="text-wrapper-13">Valentine's Day</div>
+          <div class="text-wrapper-14">Mother's Day</div>
+          <div class="text-wrapper-15">Birthday</div>
+          <div class="text-wrapper-16">Romance</div>
+          <div class="text-wrapper-17">Thank You</div>
+          <div class="text-wrapper-18">Get Well</div>
+        </div>
+      </div>
+    </div>
+
     <!-- Add the popup and overlay HTML -->
     <div class="overlay" id="overlay"></div>
     <div class="search-popup" id="searchPopup">
       <div class="box">
         <div class="group">
           <div class="overlap-group">
-            <div class="text-wrapper">Bouquets</div>
+            <div class="search-text">Bouquets</div>
             <img class="line" src="Assets/Line 21.svg" />
             <a href="searchresults.html">
               <img class="search" src="Assets/search white.svg" />
@@ -48,90 +329,118 @@
       </div>
     </div>
 
-    <div class="product-page">
-      <div class="div">
-        <div class="overlap">
-          <div class="overlap-group">
-            <img class="untitled-design" src="Assets/3D Flower.png" />
-            <div class="rectangle"></div>
-            <a href="listofproducts.html">
-              <div class="text-wrapper">Bouquets</div>
-            </a>
-            <div class="text-wrapper-2">Opulent</div>
-            <img class="arrow-forward" src="Assets/arrow_forward.svg" />
-            <div class="text-wrapper-3">Opulent</div>
-            <p class="large-bright-bouquet">
-              <span class="span">Large Bright Bouquet in a Glass Vase<br /></span>
-              <span class="text-wrapper-4"
-                >True to its namesake, Opulent, this large bouquet is an astounding sight. A bright combination of pink
-                and yellow in lilies, roses, gerberas, and alstroemeria, highlighted by green and purple
-                foliage. Standing tall in a glass vase, this gift will amaze them. </span
-              >
-            </p>
-            <div class="text-wrapper-5">$138.00</div>
-            <img class="img" src="Assets/3D Flower.png" />
-            <img class="rectangle-2" src="Assets/Rectangle 9.svg" />
+    <div class="home-page">
+      <div class="main-container">
+        <nav class="navigation">
+          <div class="nav-content">
+            <img class="element-eaeb" src="Assets/logo-black.png" />
+            <div class="nav-links">
+              <a href="index.html" class="text-wrapper-8">Home</a>
+              <div class="text-wrapper-9" onclick="toggleDropdown()">Shop</div>
+              <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" onclick="toggleDropdown()" />
+              <div class="text-wrapper-5">About</div>
+              <div class="text-wrapper-6">Delivery</div>
+              <div class="text-wrapper-7">Contact</div>
+            </div>
+            <div class="nav-icons">
+              <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
+              <img class="user" src="Assets/User.svg" />
+              <a href="listofproducts.html">
+                <img class="shopping-cart" src="Assets/Shopping cart.svg" />
+              </a>
+            </div>
+          </div>
+          <img class="header-line" src="Assets/Header Line.svg" alt="Header line" />
+        </nav>
+
+        <div class="flower-image">
+          <div class="rectangle"></div>
+          <img class="wmmmewl" src="Assets/Flowers/Opulent.png" />
+        </div>
+
+        <div class="opulent">
+          <div class="text-wrapper-3">Opulent</div>
+          <div class="text-wrapper-5">$138.00</div>
+        </div>
+
+        <div class="product-details">
+          <p class="large-bright-bouquet">
+            <span class="span">Large Bright Bouquet in a Glass Vase<br /></span>
+            <span class="text-wrapper-4"
+              >True to its namesake, Opulent, this large bouquet is an astounding sight. A bright combination of pink
+              and yellow in lilies, roses, gerberas, and alstroemeria, highlighted by green and purple
+              foliage. Standing tall in a glass vase, this gift will amaze them. </span
+            >
+          </p>
+          <div class="size-options">
             <div class="text-wrapper-6">Size Options</div>
-            <a href="shoppingcartpage.html">
-              <div class="rectangle-3"></div>
-              <div class="text-wrapper-7">Add to cart</div>
-            </a>
-            <div class="text-wrapper-8">1</div>
-            <img class="add" src="Assets/add.svg" />
-            <img class="check-indeterminate" src="Assets/check_indeterminate_small copy.svg" />
             <div class="rectangle-4"></div>
-            <div class="rectangle-5"></div>
             <div class="text-wrapper-9">$138.00</div>
             <div class="text-wrapper-10">Standard (As displayed)</div>
             <div class="text-wrapper-11">Premium (Extra flowers)</div>
             <div class="text-wrapper-12">$165.00</div>
-            <img class="wmmmewl" src="Assets/Flowers/Opulent.png" />
-            <img class="untitled-design-2" src="Assets/3D Flower.png" />
           </div>
-          <a href="index.html">
-            <div class="text-wrapper-13">Home page</div>
-          </a>
-          <img class="arrow-forward-2" src="Assets/arrow_forward.svg" />
-        </div>
-        <div class="group">
-          <div class="group-wrapper">
-            <div class="line-wrapper"><img class="line" src="img/line-3.svg" /></div>
-          </div>
-        </div>
-        <div class="div-wrapper">
-          <div class="group-2">
-            <img class="search" src="Assets/search.svg" onclick="openSearchPopup()" />
+          <div class="add-to-cart">
             <a href="shoppingcartpage.html">
-              <img class="shopping-cart" src="Assets/Shopping cart.svg" />
+              <div class="rectangle-3"></div>
+              <div class="text-wrapper-7">Add to cart</div>
             </a>
-            <img class="user" src="Assets/User.svg" />
-            <div class="text-wrapper-14">About</div>
-            <div class="text-wrapper-15">Delivery</div>
-            <div class="text-wrapper-16">Contact</div>
-            <a href="index.html">
-              <div class="text-wrapper-17">Home</div>
-            </a>
-            <div class="text-wrapper-18">Shop</div>
-            <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
-            <img class="element-eaeb" src="Assets/logo-black.png" />
+          </div>
+          <div class="quantity-options">
+            <img class="rectangle-2" src="Assets/Rectangle 9.svg" />
+            <div class="text-wrapper-8">1</div>
+            <img class="add" src="Assets/add.svg" />
+            <img class="check-indeterminate" src="Assets/check_indeterminate_small copy.svg" />
+            <div class="rectangle-5"></div>
           </div>
         </div>
-        <img class="header-line" src="Assets/Header Line.svg" alt="Header line" />
+
+        <div class="back-to-products">
+          <a href="index.html" class="text-wrapper-13">Home page</a>
+          <img class="arrow-forward-2" src="Assets/arrow_forward.svg" />
+          <a href="listofproducts.html" class="text-wrapper">Bouquets</a>
+          <img class="arrow-forward" src="Assets/arrow_forward.svg" />
+          <div class="text-wrapper-2">Opulent</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-wrapper">
+          <div class="line-wrapper"><img class="line" src="img/line-3.svg" /></div>
+        </div>
       </div>
     </div>
-    <script>
-      function openSearchPopup() {
-        document.getElementById('overlay').style.display = 'block';
-        document.getElementById('searchPopup').style.display = 'block';
-      }
+  </div>
 
-      function closeSearchPopup() {
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('searchPopup').style.display = 'none';
-      }
+  <script>
+    function openSearchPopup() {
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById('searchPopup').style.display = 'block';
+    }
 
-      // Close popup when clicking outside
-      document.getElementById('overlay').addEventListener('click', closeSearchPopup);
-    </script>
+    function closeSearchPopup() {
+      document.getElementById('overlay').style.display = 'none';
+      document.getElementById('searchPopup').style.display = 'none';
+    }
+
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdownPopup');
+      if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+      } else {
+        dropdown.style.display = 'block';
+      }
+    }
+
+    // Close popup when clicking outside
+    document.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('dropdownPopup');
+      const arrow = document.querySelector('.arrow-drop-down');
+      if (!dropdown.contains(event.target) && event.target !== arrow) {
+        dropdown.style.display = 'none';
+      }
+    });
+
+    document.getElementById('overlay').addEventListener('click', closeSearchPopup);
+  </script>
   </body>
 </html>
