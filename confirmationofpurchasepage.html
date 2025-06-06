@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style7.css" />
     <link rel="stylesheet" href="stylesearch.css" />
+    <link rel="stylesheet" href="shop.css" />
     <style>
       .search-popup {
         display: none;
@@ -28,9 +29,104 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
       }
+
+      .drop-down-box {
+        display: none;
+        position: fixed;
+        top: 145px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1440px;
+        height: 528px;
+        z-index: 1000;
+        background-color: #1a1917;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      }
+
+      .drop-down-group {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 390px) {
+        .drop-down-box {
+          top: 140px;
+          width: 100%;
+          height: auto;
+          padding: 15px;
+          left: 0;
+          transform: none;
+        }
+
+        .drop-down-group {
+          width: 100%;
+        }
+
+        .drop-down-overlap-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          padding: 8px;
+        }
+
+        .drop-down-overlap-group div {
+          width: 100%;
+          font-size: 11px;
+          padding: 6px;
+          text-align: center;
+          border-bottom: 1px solid #F1ECDB;
+        }
+
+        .text-wrapper-19,
+        .text-wrapper-20 {
+          font-size: 13px;
+          font-weight: bold;
+          color: #ffffff;
+          margin-top: 12px;
+          width: 100%;
+          padding: 8px !important;
+        }
+
+        .drop-down-overlap-group .line,
+        .drop-down-overlap-group .img {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
+    <!-- Shop dropdown -->
+    <div class="drop-down-box" id="dropdownPopup">
+      <div class="drop-down-group">
+        <div class="drop-down-overlap-group">
+          <div class="text-wrapper-19">Shop our collection</div>
+          <div class="text-wrapper-6">By Flowers</div>
+          <div class="text-wrapper-7">Roses</div>
+          <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
+          <div class="text-wrapper-9">Arrangements</div>
+          <div class="text-wrapper-10">Corporate</div>
+          <div class="text-wrapper-20">By Occasion</div>
+          <div class="text-wrapper">Sympathy</div>
+          <div class="div">Congratulations</div>
+          <div class="text-wrapper-2">Seasons Best</div>
+          <div class="text-wrapper-3">Potted Plants</div>
+          <div class="text-wrapper-4">Specials</div>
+          <div class="text-wrapper-5">Natives</div>
+          <div class="text-wrapper-11">Anniversary</div>
+          <div class="text-wrapper-12">New Baby</div>
+          <div class="text-wrapper-13">Valentine's Day</div>
+          <div class="text-wrapper-14">Mother's Day</div>
+          <div class="text-wrapper-15">Birthday</div>
+          <div class="text-wrapper-16">Romance</div>
+          <div class="text-wrapper-17">Thank You</div>
+          <div class="text-wrapper-18">Get Well</div>
+          <img class="line" src="Assets/Line 21.svg" />
+          <img class="img" src="Assets/Line 21.svg" />
+        </div>
+      </div>
+    </div>
+
     <div class="overlay" id="overlay"></div>
     <div class="search-popup" id="searchPopup">
       <div class="box">
@@ -66,9 +162,9 @@
                     <div class="text-wrapper-4">Home</div>
                   </a>
                   <a href="listofproducts.html">
-                    <div class="text-wrapper-5">Shop</div>
+                    <div class="text-wrapper-5" onclick="toggleDropdown()">Shop</div>
                   </a>
-                  <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" />
+                  <img class="arrow-drop-down" src="Assets/arrow_drop_down.svg" onclick="toggleDropdown()" />
                   <img class="element-eaeb" src="Assets/logo-black.png" />
                 </div>
               </div>
@@ -177,6 +273,24 @@
         document.getElementById('overlay').style.display = 'none';
         document.getElementById('searchPopup').style.display = 'none';
       }
+
+      function toggleDropdown() {
+        const dropdown = document.getElementById('dropdownPopup');
+        if (dropdown.style.display === 'block') {
+          dropdown.style.display = 'none';
+        } else {
+          dropdown.style.display = 'block';
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdownPopup');
+        const arrow = document.querySelector('.arrow-drop-down');
+        if (!dropdown.contains(event.target) && event.target !== arrow) {
+          dropdown.style.display = 'none';
+        }
+      });
 
       document.getElementById('overlay').addEventListener('click', closeSearchPopup);
     </script>

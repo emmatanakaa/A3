@@ -1,3 +1,10 @@
+body {
+    background-color: #FFFAEA;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
 .shopping-cart-page {
     background-color: #fffaea;
     display: flex;

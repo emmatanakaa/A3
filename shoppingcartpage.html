@@ -30,12 +30,14 @@
         z-index: 999;
       }
 
-      .box {
+      .drop-down-box {
         display: none;
         position: fixed;
-        top: 80px;
-        left: 0;
-        width: 1440px;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1440px;
         height: 528px;
         z-index: 1000;
       }
@@ -43,7 +45,7 @@
       .dropdown-popup {
         display: none;
         position: fixed;
-        top: 80px;
+        top: 100px;
         left: 335px;
         width: 200px;
         background-color: #FFFFFF;
@@ -68,24 +70,206 @@
         color: #F1ECDB;
         cursor: pointer;
       }
+
+      .search-text {
+        position: absolute;
+        width: 174px;
+        left: 13%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        margin-top: -20px;
+        font-family: "Montserrat-Medium", Helvetica;
+        font-weight: 300;
+        color: #FFFFFF;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      .drop-down-group {
+        position: fixed;
+        width: 1482px;
+        height: 528px;
+        top: 0;
+        left: 0;
+      }
+
+      .drop-down-overlap-group {
+        position: relative;
+        width: 1440px;
+        height: 528px;
+        background-color: #1a1917;
+      }
+
+      .drop-down-box .text-wrapper-6 {
+        width: 174px;
+        top: 113px;
+        position: absolute;
+        left: 111px;
+        font-family: "Montserrat-Light", Helvetica;
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .drop-down-box .text-wrapper-7 {
+        position: absolute;
+        width: 94px;
+        top: 183px;
+        left: 111px;
+        font-family: "Montserrat-Light", Helvetica;
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .drop-down-box .text-wrapper-8 {
+        position: absolute;
+        width: 132px;
+        top: 221px;
+        left: 111px;
+        font-family: "Montserrat-Light", Helvetica;
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .drop-down-box .text-wrapper-20 {
+        position: absolute;
+        width: 174px;
+        top: 320px;
+        left: 111px;
+        font-family: "Montserrat-Light", Helvetica;
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .drop-down-box .text-wrapper {
+        position: absolute;
+        width: 206px;
+        top: 373px;
+        left: 1098px;
+        font-family: "Montserrat-Light", Helvetica;
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .drop-down-box .div {
+        position: absolute;
+        width: 206px;
+        top: 415px;
+        left: 1098px;
+        font-family: "Montserrat-Light", Helvetica;
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .drop-down-box .line,
+      .drop-down-box .img {
+        position: absolute;
+        width: 289px;
+        height: 1px;
+        top: 158px;
+        object-fit: cover;
+      }
+
+      .drop-down-box .line {
+        left: 111px;
+        top:auto
+      }
+
+      .drop-down-box .img {
+        left: 100px;
+        top: 350px;
+      }
+
+      @media screen and (max-width: 390px) {
+        .search-text {
+          width: auto;
+          left: 40px;
+          top: 40px;
+          transform: none;
+          margin-top: 0;
+          font-size: 24px;
+          position: absolute;
+        }
+
+        .drop-down-box {
+          top: 120px;
+          width: 100%;
+          height: auto;
+          padding: 15px;
+          left: 0;
+          transform: none;
+        }
+
+        .drop-down-group {
+          width: 100%;
+        }
+
+        .drop-down-overlap-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          padding: 8px;
+        }
+
+        .drop-down-overlap-group div {
+          width: 100%;
+          font-size: 11px;
+          padding: 6px;
+          text-align: center;
+          border-bottom: 1px solid #F1ECDB;
+        }
+
+        .drop-down-overlap-group .line,
+        .drop-down-overlap-group .img {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
     <!-- Shop dropdown -->
-    <div class="box" id="dropdownPopup">
-      <div class="group">
-        <div class="overlap-group">
+    <div class="drop-down-box" id="dropdownPopup">
+      <div class="drop-down-group">
+        <div class="drop-down-overlap-group">
+          <div class="text-wrapper-6">By Flowers</div>
+          <div class="text-wrapper-7">Roses</div>
+          <div class="text-wrapper-8">Bouquets</div>
+          <div class="text-wrapper-9">Arrangements</div>
+          <div class="text-wrapper-10">Corporate</div>
+          <div class="text-wrapper-20">By Occasion</div>
           <div class="text-wrapper">Sympathy</div>
           <div class="div">Congratulations</div>
           <div class="text-wrapper-2">Seasons Best</div>
           <div class="text-wrapper-3">Potted Plants</div>
           <div class="text-wrapper-4">Specials</div>
           <div class="text-wrapper-5">Natives</div>
-          <div class="text-wrapper-6">By Flowers</div>
-          <div class="text-wrapper-7">Roses</div>
-          <div class="text-wrapper-8"><a href="listofproducts.html" style="text-decoration: none; color: inherit;">Bouquets</a></div>
-          <div class="text-wrapper-9">Arrangements</div>
-          <div class="text-wrapper-10">Corporate</div>
           <div class="text-wrapper-11">Anniversary</div>
           <div class="text-wrapper-12">New Baby</div>
           <div class="text-wrapper-13">Valentine's Day</div>
@@ -95,9 +279,8 @@
           <div class="text-wrapper-17">Thank You</div>
           <div class="text-wrapper-18">Get Well</div>
           <div class="text-wrapper-19">Shop our collection</div>
-          <div class="text-wrapper-20">By Ocassion</div>
-          <img class="line" src="img/line-23.svg" />
-          <img class="img" src="img/line-24.svg" />
+          <img class="line" src="Assets/Line 21.svg" />
+          <img class="img" src="Assets/Line 21.svg" />
         </div>
       </div>
     </div>
@@ -108,7 +291,7 @@
       <div class="box">
         <div class="group">
           <div class="overlap-group">
-            <div class="text-wrapper">Bouquets</div>
+            <div class="search-text">Bouquets</div>
             <img class="line" src="Assets/Line 21.svg" />
             <a href="searchresults.html">
               <img class="search" src="Assets/search white.svg" />
@@ -177,7 +360,7 @@
             </div>
             <div class="overlap-3">
               <div class="rectangle-3"></div>
-              <a href="deliverydetailspage.html">
+              <a href="deliverydetails2.html">
                 <div class="rectangle-4"></div>
                 <div class="text-wrapper-16">Checkout</div>
               </a>

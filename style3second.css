@@ -1,3 +1,25 @@
+.home-page {
+    background-color: #FFFAEA;
+    background-image: url('Assets/Home\ page.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .navigation {
     width: 100%;
     padding: 20px 0;
@@ -5,7 +27,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #FFFAEA
     backdrop-filter: blur(5px);
 }
 
@@ -31,22 +53,51 @@
     gap: 20px;
 }
 
-.search-text {
-    position: absolute;
-    width: 174px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: -20px;
-    font-family: "Montserrat-Medium", Helvetica;
-    font-weight: 300;
-    color: #FFFFFF;
-    font-size: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-    text-align: center;
+.main-content {
+    margin-top: 150px;
+    padding: 30px 40px;
+    position: relative;
+    text-align: left;
 }
+
+.text-section {
+    max-width: 921px;
+    margin-left: 91px;
+    position: relative;
+    text-align: left;
+}
+
+.title {
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3d1b10;
+    font-size: 96px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.text {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 0 30px 0;
+}
+
+.in-bloom-wrapper {
+  font-size: 75px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.line-one,
+.line-two,
+.line-three {
+  display: block;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
 
 /* Navigation text styles */
 .text-wrapper-5,
@@ -61,6 +112,24 @@
     white-space: nowrap;
 }
 
+.text-wrapper {
+    font-weight: 500;
+    color: #3d1b10;
+    text-align: left;
+}
+
+.text-wrapper-2 {
+    font-family: 'Just Another Hand', sans-serif;
+    color: #7e2526;
+    text-align: left;
+}
+
+.text-wrapper-4 {
+    font-family: "Raleway-Regular", Helvetica;
+    color: #7e2526;
+    text-align: left;
+}
+
 /* Icons */
 .search,
 .shopping-cart,
@@ -69,6 +138,7 @@
     width: clamp(25px, 3vw, 45px);
     height: auto;
     cursor: pointer;
+    margin-left: -5px; /* Or whatever spacing you need */
 }
 
 .element-eaeb {
@@ -84,298 +154,6 @@
     display: block;
 }
 
-.flower-image {
-    margin-top: 100px;
-    top:400px;
-    left:2px;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    z-index: 2;
-}
-
-
-@media screen and (max-width: 1368px) {
-    .nav-content {
-        width: 100%;
-        max-width: 1368px;
-        margin: 0 auto;
-    }
-
-    .nav-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 10px;
-        gap: 20px;
-    }
-
-    .text-about,
-    .text-delivery,
-    .text-contact,
-    .text-home,
-    .text-shop {
-        white-space: nowrap;
-    }
-
-    .header-line {
-        width: 100%;
-        max-width: 1328px;
-    }
-
-    img.element-eaeb {
-        max-width: 150px;
-        height: auto;
-    }
-
-    .flower-image {
-        margin-top: 150px;
-        top: 250px;
-        left: 2px;
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
-        z-index: 2;
-    }
-
-    .flower-image .wmmmewl {
-        position: absolute;
-        width: 654px;
-        height: 690px;
-        top: 200px;
-        left: 100px;
-        object-fit: cover;
-        z-index: 2;
-    }
-
-    .flower-image .rectangle {
-        position: absolute;
-        width: 675px;
-        height: 645px;
-        top: 204px;
-        left: 66px;
-        background-color: #000000e6;
-        border-radius: 2px;
-        transform: rotate(-45deg);
-        z-index: 1;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .text-section {
-        margin-left: 40px;
-    }
-    
-    .nav-links {
-        gap: 20px;
-    }
-    
-    .header-line {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .nav-content {
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin: 15px 0;
-    }
-    
-    .nav-icons {
-        margin-top: 10px;
-    }
-    
-    .text-section {
-        margin-left: 20px;
-    }
-    
-    .main-content {
-        margin-top: 200px;
-    }
-    
-    .header-line {
-        width: 98%;
-        margin-top: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .main-container {
-        padding: 0 1px;
-    }
-
-    .flower-image {
-        margin-top: 100px;
-        position: absolute;
-        top: 400px;
-        left: 300px;
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
-        z-index: 2;
-    }
-
-    .product-details {
-        top: 1400px;
-        left: -1300px;
-        scale: 1.7;
-        text-wrap: wrap;
-    }
-
-    .product-details .text-wrapper-4 {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        width: 280px;
-        max-width: 280px;
-        text-align: left;
-        display: block;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        white-space: normal;
-    }
-
-    .opulent {
-        top: 1100px;
-        left: -900px;
-        scale: 1.5;
-        text-wrap: wrap;
-    }
-
-    .main-content {
-      margin-top: 180px;
-      padding: 5px 20px;
-    }
-    
-    .text-section {
-        margin-left: 10px;
-    }
-    
-    .nav-links {
-        gap: 10px;
-    }
-    
-    .nav-icons {
-        gap: 15px;
-    }
-    
-    .header-line {
-        width: 100%;
-        margin-top: 10px;
-    }
-    
-    .title {
-        font-size: 35px;
-    }
-
-    .text{
-      width: 200px;
-    }
-
-    .home-page {
-      background-size: cover;
-      background-position: right 200px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      min-height: 100vh;
-      width: 100%;
-  }
-
-  .search-popup .overlap-group {
-    width: 50%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-    
-}
-
-@media screen and (max-width: 390px) {
-    .navigation {
-        padding: 8px 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(5px);
-    }
-
-    .nav-content {
-        padding: 0 10px;
-        flex-direction: column;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin: 15px 0;
-    }
-
-    .nav-links .arrow-drop-down {
-        width: 10px;
-    }
-
-    .text-wrapper-5,
-    .text-wrapper-6,
-    .text-wrapper-7,
-    .text-wrapper-8,
-    .text-wrapper-9 {
-        font-size: 10px;
-    }
-
-    .nav-icons {
-        margin-top: 10px;
-        gap: 15px;
-    }
-
-    .nav-icons img {
-        width: 18px;
-        height: 18px;
-    }
-
-    .element-eaeb {
-        width: 50px;
-    }
-
-    .header-line {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .large-bright-bouquet {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        width: 100%;
-        max-width: 300px;
-        margin-top: 1px;
-    }
-
-    .text-wrapper-4 {
-        display: block !important;
-        line-height: 1.5;
-        width: 260px !important;
-        max-width: 260px !important;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        text-align: left;
-        margin-top: 2px;
-        font-size: 12px;
-        white-space: normal !important;
-    }
-}
   
 .back-to-products {
     display: flex;
@@ -450,7 +228,7 @@
     width: 100%;
     height: auto;
     top: 150px;
-    right: 10px;
+    right: 70px;
 }
 
 .opulent .text-wrapper-3 {
@@ -677,6 +455,7 @@
     transform: rotate(-45deg);
     z-index: 1;
 }
+
 @media screen and (max-width: 1024px) {
     .text-section {
         margin-left: 40px;
@@ -743,48 +522,6 @@
         padding: 0 1px;
     }
 
-    .flower-image {
-        margin-top: 100px;
-        position: absolute;
-        top: 400px;
-        left: 120px;
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        max-height: 100%;
-        z-index: 2;
-    }
-
-    .product-details {
-        top: 1100px;
-        left: -1350px;
-        scale: 1.7;
-        text-wrap: wrap;
-    }
-    .large-bright-bouquet {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        margin-top: 5px;
-    }
-
-    .text-wrapper-4 {
-        display: block;
-        line-height: 1.4;
-        max-width: 500px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        text-align: left;
-        margin-top: 1px;
-    }
-
-    .opulent {
-        top: 1150px;
-        left: -980px;
-        scale: 1.5;
-    }
-
     .main-content {
       margin-top: 180px;
       padding: 5px 20px;
@@ -835,20 +572,14 @@
 @media screen and (max-width: 390px) {
     .navigation {
         padding: 8px 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(5px);
     }
 
     .nav-content {
         padding: 0 10px;
-        flex-direction: column;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 10px;
-        margin: 15px 0;
     }
 
     .nav-links .arrow-drop-down {
@@ -864,7 +595,6 @@
     }
 
     .nav-icons {
-        margin-top: 10px;
         gap: 15px;
     }
 
@@ -879,30 +609,6 @@
 
     .header-line {
         margin-top: 10px;
-        width: 100%;
-    }
-
-    .large-bright-bouquet {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        width: 100%;
-        max-width: 300px;
-        margin-top: 5px;
-    }
-
-    .text-wrapper-4 {
-        display: block !important;
-        line-height: 1.5;
-        width: 500px !important;
-        max-width: 500px !important;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        text-align: left;
-        margin-top: 2px;
-        font-size: 12px;
-        white-space: normal !important;
     }
 }
 

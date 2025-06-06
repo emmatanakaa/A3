@@ -1,3 +1,10 @@
+body {
+    background-color: #FFFAEA;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
 .navigation {
     width: 100%;
     padding: 20px 0;
@@ -5,7 +12,8 @@
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #FFFAEA;
+    backdrop-filter: blur(5px);
 }
 
 .nav-content {
@@ -99,9 +107,9 @@
 
 .header-line {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     height: auto;
-    margin: 20px auto 0;
+    margin: 10px auto;
     display: block;
 }
 
@@ -153,6 +161,28 @@
     .nav-icons img {
         width: 35px;
         height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-line {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-line {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navigation {
+        padding: 8px 0;
+        background-color: #FFFAEA;
+        backdrop-filter: blur(5px);
     }
 }
 
@@ -1004,11 +1034,28 @@
     height: 48px;
     top: 827px;
     left: 140px;
+    z-index: 10;
+}
+
+.continue-button a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 11;
+}
+
+.continue-button .rectangle-10 {
+    position: absolute;
+    width: 230px;
+    height: 48px;
     background-color: #000000;
     border-radius: 2px;
-  }
-  
-  .continue-button .text-wrapper-29 {
+    z-index: 9;
+}
+
+.continue-button .text-wrapper-29 {
     position: absolute;
     width: 120px;
     top: 11px;
@@ -1020,7 +1067,8 @@
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-  }
+    z-index: 12;
+}
   
   .back-to-products {
     position: absolute;
