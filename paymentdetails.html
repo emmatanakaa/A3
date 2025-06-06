@@ -95,6 +95,27 @@
           display: none;
         }
       }
+
+      .name-on-card {
+        position: relative;
+      }
+
+      .overlap-group-name {
+        margin-top: 10px;
+        position: relative;
+        transform: translateY(300px);
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        .confirm-button {
+          position: relative;
+          top: 1100px;
+          left: 200px;
+          margin-top: 30px;
+          z-index: 10;
+        }
+      }
     </style>
   </head>
   <body>
@@ -174,7 +195,10 @@
       <div class="line-2"></div>
     </div>
 
-    <p class="name-on-card"><span class="span">Name on card</span> <span class="text-wrapper-6">*</span></p>
+    <p class="name-on-card">
+      <span class="span">Name on card</span> <span class="text-wrapper-6">*</span>
+      <div class="overlap-group-name"><div class="text-wrapper-9">Enter cardholder name</div></div>
+    </p>
 
     <p class="card-number">
         <span class="span">Card number</span> <span class="text-wrapper-6">*<br /></span>
